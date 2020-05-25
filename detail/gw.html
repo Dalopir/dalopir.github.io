@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Guinea-Bissau Dashboard COVID-19</title>
+  </head>
+
+<body>
+
+<header class="navbar navbar-expand navbar-dark bg-primary flex-column flex-md-row bd-navbar mb-3">
+  <a class="navbar-brand mr-0 mr-md-2 p-0" href="/"><img src="/img/logo2.png?a=1590362299" alt="Logo"/></a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+        <!--
+      <li class="nav-item">
+        <a class="nav-link " href="/"><i class="fas fa-home mr-1"></i>Home</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link " href="/index.html"><i class="fas fa-table mr-1"></i>Data</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link active" href="/detail.html">Detail</a>
+      </li>-->
+      <li class="nav-item">
+        <a class="nav-link " href="/map.html"><i class="fas fa-globe mr-1"></i>Map</a>
+      </li>
+        <!--
+      <li class="nav-item">
+        <a class="nav-link " href="/oms-recomendations.html"><i class="fas fa-book-medical mr-1"></i>OMS Recomendations</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link " href="/aboutus.html"><i class="fas fa-info mr-1"></i>About us</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+
+<div class="container-fluid">
+    <h1>    <img src="https://www.countryflags.io/gw/flat/64.png">
+        Covid-19. Statistical data for Guinea-Bissau</h1>
+    <p class="intro mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet nisl odio. Integer in sem tellus.
+        Cras condimentum magna vel facilisis scelerisque. Sed eros erat, vehicula at placerat non, vulputate vel leo.
+        Nullam auctor accumsan quam ut tincidunt. Nunc sed posuere augue.
+    </p>
+
+    <h2 class="mb-1">Infected by day</h2>
+    <p class="intro mb-4">
+        Number of Coronavirus COVID-19 infected each day in Guinea-Bissau. Also the moving average of 7 days is included to reduce errors in the take of data.
+    </p>
+    <div id="container-infected" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day</h2>
+    <p class="intro mb-4">
+        Number of Coronavirus COVID-19 deaths each day in Guinea-Bissau. Also the moving average of 7 days is included to reduce errors in the take of data.
+    </p>
+    <div id="container-deaths" class="mb-3"></div>
+
+    <h2 class="mb-1">Infected (acumulated)</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Guinea-Bissau.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+</div>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script>
+
+    var seriesInfected = [1,20,0,132,0,52,0,0,156,0,62,89,30,47,85,35,59,16,77,0,56,21,42,6,51,20,5,0];
+    var seriesInfectedMovingAverage = [0.42857142857143,3.2857142857143,3.2857142857143,22.142857142857,22.142857142857,29.285714285714,29.285714285714,29.142857142857,48.571428571429,48.571428571429,38.571428571429,51.285714285714,48.142857142857,54.857142857143,67,49.714285714286,58.142857142857,51.571428571429,49.857142857143,45.571428571429,46.857142857143,37.714285714286,38.714285714286,31.142857142857,36.142857142857,28,28.714285714286,20.714285714286];
+    var dateSeriesAxis = ["Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23"];
+
+</script>
+<script src="/js/infected-day.js?a=1590362299"></script>
+
+<script>
+
+    var seriesDeath = [1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,2,0,0,0,0];
+    var seriesDeathMovingAverage = [0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0,0,0,0.14285714285714,0.14285714285714,0.14285714285714,0.28571428571429,0.28571428571429,0.28571428571429,0.28571428571429,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.42857142857143,0.42857142857143,0.42857142857143,0.42857142857143,0.28571428571429];
+
+</script>
+<script src="/js/deaths-day.js?a=1590362299"></script>
+
+<script>
+    var seriesInfectedAcumulated = [53,73,73,205,205,257,257,257,413,413,475,564,594,641,726,761,820,836,913,913,969,990,1032,1038,1089,1109,1114,1114];
+</script>
+<script src="/js/infected-acumulated.js?a=1590362299"></script>
+
+
+
+
+
+
+<script src="/js/jquery-3.5.1.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Sudan Dashboard COVID-19</title>
+  </head>
+
+<body>
+
+<header class="navbar navbar-expand navbar-dark bg-primary flex-column flex-md-row bd-navbar mb-3">
+  <a class="navbar-brand mr-0 mr-md-2 p-0" href="/"><img src="/img/logo2.png?a=1590362296" alt="Logo"/></a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+        <!--
+      <li class="nav-item">
+        <a class="nav-link " href="/"><i class="fas fa-home mr-1"></i>Home</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link " href="/index.html"><i class="fas fa-table mr-1"></i>Data</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link active" href="/detail.html">Detail</a>
+      </li>-->
+      <li class="nav-item">
+        <a class="nav-link " href="/map.html"><i class="fas fa-globe mr-1"></i>Map</a>
+      </li>
+        <!--
+      <li class="nav-item">
+        <a class="nav-link " href="/oms-recomendations.html"><i class="fas fa-book-medical mr-1"></i>OMS Recomendations</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link " href="/aboutus.html"><i class="fas fa-info mr-1"></i>About us</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+
+<div class="container-fluid">
+    <h1>    <img src="https://www.countryflags.io/sd/flat/64.png">
+        Covid-19. Statistical data for Sudan</h1>
+    <p class="intro mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet nisl odio. Integer in sem tellus.
+        Cras condimentum magna vel facilisis scelerisque. Sed eros erat, vehicula at placerat non, vulputate vel leo.
+        Nullam auctor accumsan quam ut tincidunt. Nunc sed posuere augue.
+    </p>
+
+    <h2 class="mb-1">Infected by day</h2>
+    <p class="intro mb-4">
+        Number of Coronavirus COVID-19 infected each day in Sudan. Also the moving average of 7 days is included to reduce errors in the take of data.
+    </p>
+    <div id="container-infected" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day</h2>
+    <p class="intro mb-4">
+        Number of Coronavirus COVID-19 deaths each day in Sudan. Also the moving average of 7 days is included to reduce errors in the take of data.
+    </p>
+    <div id="container-deaths" class="mb-3"></div>
+
+    <h2 class="mb-1">Infected (acumulated)</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Sudan.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+</div>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script>
+
+    var seriesInfected = [1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,2,1,0,1,0,1,2,0,2,0,2,0,1,2,2,0,10,3,0,0,1,33,0,41,0,33,34,0,39,24,38,43,57,67,91,59,0,86,100,74,78,181,53,201,161,135,157,0,146,325,0,302,137,0,410,240,250];
+    var seriesInfectedMovingAverage = [0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.28571428571429,0.28571428571429,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.28571428571429,0.14285714285714,0.14285714285714,0.14285714285714,0.42857142857143,0.57142857142857,0.57142857142857,0.57142857142857,0.57142857142857,0.71428571428571,1,0.71428571428571,0.85714285714286,0.85714285714286,1,1,1,1,1.2857142857143,1,2.4285714285714,2.5714285714286,2.5714285714286,2.4285714285714,2.2857142857143,6.7142857142857,6.7142857142857,11.142857142857,10.714285714286,15.428571428571,20.285714285714,20.142857142857,21,24.428571428571,24,30.142857142857,33.571428571429,38.285714285714,51.285714285714,54.142857142857,50.714285714286,57.571428571429,65.714285714286,68.142857142857,69.714285714286,82.571428571429,81.714285714286,110.42857142857,121.14285714286,126.14285714286,138,126.85714285714,121.85714285714,160.71428571429,132,152.14285714286,152.42857142857,130,188.57142857143,202,191.28571428571];
+    var dateSeriesAxis = ["Mar, 13","Mar, 14","Mar, 15","Mar, 16","Mar, 17","Mar, 18","Mar, 19","Mar, 20","Mar, 21","Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Abr, 1","Abr, 2","Abr, 3","Abr, 4","Abr, 5","Abr, 6","Abr, 7","Abr, 8","Abr, 9","Abr, 10","Abr, 11","Abr, 12","Abr, 13","Abr, 14","Abr, 15","Abr, 16","Abr, 17","Abr, 18","Abr, 19","Abr, 20","Abr, 21","Abr, 22","Abr, 23","Abr, 24","Abr, 25","Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23"];
+
+</script>
+<script src="/js/infected-day.js?a=1590362296"></script>
+
+<script>
+
+    var seriesDeath = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,1,4,0,2,0,1,3,0,1,4,1,3,3,3,5,5,0,0,4,4,3,7,5,6,4,6,10,0,1,6,0,8,6,0,10,16,9];
+    var seriesDeathMovingAverage = [0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0,0,0,0,0,0,0,0,0,0,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0,0,0,0,0,0,0,0.28571428571429,0.42857142857143,0.42857142857143,0.42857142857143,0.57142857142857,1.1428571428571,1.1428571428571,1.1428571428571,1,1.1428571428571,1.5714285714286,1.4285714285714,1,1.5714285714286,1.4285714285714,1.8571428571429,2.1428571428571,2.1428571428571,2.8571428571429,3.4285714285714,2.8571428571429,2.7142857142857,2.8571428571429,3,3,3.2857142857143,3.2857142857143,4.1428571428571,4.7142857142857,5,5.8571428571429,5.4285714285714,4.5714285714286,4.7142857142857,3.8571428571429,4.4285714285714,4.4285714285714,3,4.4285714285714,6.5714285714286,7];
+
+</script>
+<script src="/js/deaths-day.js?a=1590362296"></script>
+
+<script>
+    var seriesInfectedAcumulated = [1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,5,6,6,7,7,8,10,10,12,12,14,14,15,17,19,19,29,32,32,32,33,66,66,107,107,140,174,174,213,237,275,318,375,442,533,592,592,678,778,852,930,1111,1164,1365,1526,1661,1818,1818,1964,2289,2289,2591,2728,2728,3138,3378,3628];
+</script>
+<script src="/js/infected-acumulated.js?a=1590362296"></script>
+
+
+
+
+
+
+<script src="/js/jquery-3.5.1.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+#container {
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+
+.navbar-brand img{
+    max-width: 60px;
+}
+.mapbox-info {
+    font-weight: lighter;
+    font-size: 11px;
+}
+
+.infinitum::after {
+    content: "∞";
+    display:inline;
+}
+td.infinitum {
+
+}
+.extra-small {
+    font-size:10px;
+}
+.infected-small-image {
+    border: 1px solid #949ba1 !important;
+}

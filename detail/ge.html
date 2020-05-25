@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Georgia Dashboard COVID-19</title>
+  </head>
+
+<body>
+
+<header class="navbar navbar-expand navbar-dark bg-primary flex-column flex-md-row bd-navbar mb-3">
+  <a class="navbar-brand mr-0 mr-md-2 p-0" href="/"><img src="/img/logo2.png?a=1590362300" alt="Logo"/></a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+        <!--
+      <li class="nav-item">
+        <a class="nav-link " href="/"><i class="fas fa-home mr-1"></i>Home</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link " href="/index.html"><i class="fas fa-table mr-1"></i>Data</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link active" href="/detail.html">Detail</a>
+      </li>-->
+      <li class="nav-item">
+        <a class="nav-link " href="/map.html"><i class="fas fa-globe mr-1"></i>Map</a>
+      </li>
+        <!--
+      <li class="nav-item">
+        <a class="nav-link " href="/oms-recomendations.html"><i class="fas fa-book-medical mr-1"></i>OMS Recomendations</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link " href="/aboutus.html"><i class="fas fa-info mr-1"></i>About us</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+
+<div class="container-fluid">
+    <h1>    <img src="https://www.countryflags.io/ge/flat/64.png">
+        Covid-19. Statistical data for Georgia</h1>
+    <p class="intro mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet nisl odio. Integer in sem tellus.
+        Cras condimentum magna vel facilisis scelerisque. Sed eros erat, vehicula at placerat non, vulputate vel leo.
+        Nullam auctor accumsan quam ut tincidunt. Nunc sed posuere augue.
+    </p>
+
+    <h2 class="mb-1">Infected by day</h2>
+    <p class="intro mb-4">
+        Number of Coronavirus COVID-19 infected each day in Georgia. Also the moving average of 7 days is included to reduce errors in the take of data.
+    </p>
+    <div id="container-infected" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day</h2>
+    <p class="intro mb-4">
+        Number of Coronavirus COVID-19 deaths each day in Georgia. Also the moving average of 7 days is included to reduce errors in the take of data.
+    </p>
+    <div id="container-deaths" class="mb-3"></div>
+
+    <h2 class="mb-1">Infected (acumulated)</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Georgia.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+</div>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script>
+
+    var seriesInfected = [7,12,14,8,15,7,16,8,15,15,28,6,42,22,18,6,8,6,8,9,19,12,30,11,14,6,22,27,16,7,4,11,6,5,8,3,9,3,4,5,20,4,12,12,6,6,6,8,2,5];
+    var seriesInfectedMovingAverage = [10.285714285714,11.857142857143,12.142857142857,12.285714285714,13.428571428571,12,11.285714285714,11.428571428571,11.857142857143,12,14.857142857143,13.571428571429,18.571428571429,19.428571428571,20.857142857143,19.571428571429,18.571428571429,15.428571428571,15.714285714286,11,10.571428571429,9.7142857142857,13.142857142857,13.571428571429,14.714285714286,14.428571428571,16.285714285714,17.428571428571,18,14.714285714286,13.714285714286,13.285714285714,13.285714285714,10.857142857143,8.1428571428571,6.2857142857143,6.5714285714286,6.4285714285714,5.4285714285714,5.2857142857143,7.4285714285714,6.8571428571429,8.1428571428571,8.5714285714286,9,9.2857142857143,9.4285714285714,7.7142857142857,7.4285714285714,6.4285714285714];
+    var dateSeriesAxis = ["Abr, 4","Abr, 5","Abr, 6","Abr, 7","Abr, 8","Abr, 9","Abr, 10","Abr, 11","Abr, 12","Abr, 13","Abr, 14","Abr, 15","Abr, 16","Abr, 17","Abr, 18","Abr, 19","Abr, 20","Abr, 21","Abr, 22","Abr, 23","Abr, 24","Abr, 25","Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23"];
+
+</script>
+<script src="/js/infected-day.js?a=1590362300"></script>
+
+<script>
+
+    var seriesDeath = [1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0];
+    var seriesDeathMovingAverage = [0.14285714285714,0.28571428571429,0.28571428571429,0.42857142857143,0.42857142857143,0.42857142857143,0.42857142857143,0.28571428571429,0.14285714285714,0.14285714285714,0,0,0,0,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.28571428571429,0.28571428571429,0.28571428571429,0.14285714285714,0.28571428571429,0.28571428571429,0.28571428571429,0.14285714285714,0.14285714285714,0.28571428571429,0.42857142857143,0.42857142857143,0.42857142857143,0.42857142857143,0.42857142857143,0.42857142857143,0.42857142857143,0.28571428571429,0.14285714285714,0.28571428571429,0.28571428571429,0.28571428571429,0.42857142857143,0.28571428571429,0.28571428571429,0.28571428571429,0.14285714285714,0.14285714285714,0.14285714285714,0,0,0];
+
+</script>
+<script src="/js/deaths-day.js?a=1590362300"></script>
+
+<script>
+    var seriesInfectedAcumulated = [162,174,188,196,211,218,234,242,257,272,300,306,348,370,388,394,402,408,416,425,444,456,486,497,511,517,539,566,582,589,593,604,610,615,623,626,635,638,642,647,667,671,683,695,701,707,713,721,723,728];
+</script>
+<script src="/js/infected-acumulated.js?a=1590362300"></script>
+
+
+
+
+
+
+<script src="/js/jquery-3.5.1.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+
+
+
+    </body>
+</html>

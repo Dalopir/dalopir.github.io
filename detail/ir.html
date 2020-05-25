@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Iran (Islamic Republic Of) Dashboard COVID-19</title>
+  </head>
+
+<body>
+
+<header class="navbar navbar-expand navbar-dark bg-primary flex-column flex-md-row bd-navbar mb-3">
+  <a class="navbar-brand mr-0 mr-md-2 p-0" href="/"><img src="/img/logo2.png?a=1590362289" alt="Logo"/></a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+        <!--
+      <li class="nav-item">
+        <a class="nav-link " href="/"><i class="fas fa-home mr-1"></i>Home</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link " href="/index.html"><i class="fas fa-table mr-1"></i>Data</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link active" href="/detail.html">Detail</a>
+      </li>-->
+      <li class="nav-item">
+        <a class="nav-link " href="/map.html"><i class="fas fa-globe mr-1"></i>Map</a>
+      </li>
+        <!--
+      <li class="nav-item">
+        <a class="nav-link " href="/oms-recomendations.html"><i class="fas fa-book-medical mr-1"></i>OMS Recomendations</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link " href="/aboutus.html"><i class="fas fa-info mr-1"></i>About us</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+
+<div class="container-fluid">
+    <h1>    <img src="https://www.countryflags.io/ir/flat/64.png">
+        Covid-19. Statistical data for Iran (Islamic Republic of)</h1>
+    <p class="intro mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet nisl odio. Integer in sem tellus.
+        Cras condimentum magna vel facilisis scelerisque. Sed eros erat, vehicula at placerat non, vulputate vel leo.
+        Nullam auctor accumsan quam ut tincidunt. Nunc sed posuere augue.
+    </p>
+
+    <h2 class="mb-1">Infected by day</h2>
+    <p class="intro mb-4">
+        Number of Coronavirus COVID-19 infected each day in Iran (Islamic Republic of). Also the moving average of 7 days is included to reduce errors in the take of data.
+    </p>
+    <div id="container-infected" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day</h2>
+    <p class="intro mb-4">
+        Number of Coronavirus COVID-19 deaths each day in Iran (Islamic Republic of). Also the moving average of 7 days is included to reduce errors in the take of data.
+    </p>
+    <div id="container-deaths" class="mb-3"></div>
+
+    <h2 class="mb-1">Infected (acumulated)</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Iran (Islamic Republic of).
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+</div>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script>
+
+    var seriesInfected = [2,3,13,10,15,18,34,44,106,143,205,385,523,835,586,591,1234,1076,743,595,881,958,1075,1289,1365,1209,1053,1178,1192,1046,1237,966,1028,1411,1762,2206,2389,2926,3076,2901,3186,3110,2988,2875,2715,2560,2483,2274,2089,1997,1634,1972,1837,1657,1617,1574,1512,1606,1499,1374,1343,1294,1297,1194,1030,1168,1134,1153,991,1112,1073,983,1006,802,976,1223,1323,1680,1485,1556,1529,1383,1683,1481,1958,1808,2102,1757,1806,2294,2111,2346,2392,2311,1869];
+    var seriesInfectedMovingAverage = [0.28571428571429,0.71428571428571,2.5714285714286,4,6.1428571428571,8.7142857142857,13.571428571429,19.571428571429,34.285714285714,52.857142857143,80.714285714286,133.57142857143,205.71428571429,320.14285714286,397.57142857143,466.85714285714,622.71428571429,747.14285714286,798.28571428571,808.57142857143,815.14285714286,868.28571428571,937.42857142857,945.28571428571,986.57142857143,1053.1428571429,1118.5714285714,1161,1194.4285714286,1190.2857142857,1182.8571428571,1125.8571428571,1100,1151.1428571429,1234.5714285714,1379.4285714286,1571.2857142857,1812.5714285714,2114,2381.5714285714,2635.1428571429,2827.7142857143,2939.4285714286,3008.8571428571,2978.7142857143,2905,2845.2857142857,2715,2569.1428571429,2427.5714285714,2250.2857142857,2144.1428571429,2040.8571428571,1922.8571428571,1829,1755.4285714286,1686.1428571429,1682.1428571429,1614.5714285714,1548.4285714286,1503.5714285714,1457.4285714286,1417.8571428571,1372.4285714286,1290.1428571429,1242.8571428571,1208.5714285714,1181.4285714286,1138.1428571429,1111.7142857143,1094.4285714286,1087.7142857143,1064.5714285714,1017.1428571429,991.85714285714,1025,1055.1428571429,1141.8571428571,1213.5714285714,1292.1428571429,1396,1454.1428571429,1519.8571428571,1542.4285714286,1582.1428571429,1628.2857142857,1706.2857142857,1738.8571428571,1799.2857142857,1886.5714285714,1976.5714285714,2032,2115.4285714286,2145.2857142857,2161.2857142857];
+    var dateSeriesAxis = ["Feb, 19","Feb, 20","Feb, 21","Feb, 22","Feb, 23","Feb, 24","Feb, 25","Feb, 26","Feb, 27","Feb, 28","Feb, 29","Mar, 1","Mar, 2","Mar, 3","Mar, 4","Mar, 5","Mar, 6","Mar, 7","Mar, 8","Mar, 9","Mar, 10","Mar, 11","Mar, 12","Mar, 13","Mar, 14","Mar, 15","Mar, 16","Mar, 17","Mar, 18","Mar, 19","Mar, 20","Mar, 21","Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Abr, 1","Abr, 2","Abr, 3","Abr, 4","Abr, 5","Abr, 6","Abr, 7","Abr, 8","Abr, 9","Abr, 10","Abr, 11","Abr, 12","Abr, 13","Abr, 14","Abr, 15","Abr, 16","Abr, 17","Abr, 18","Abr, 19","Abr, 20","Abr, 21","Abr, 22","Abr, 23","Abr, 24","Abr, 25","Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23"];
+
+</script>
+<script src="/js/infected-day.js?a=1590362289"></script>
+
+<script>
+
+    var seriesDeath = [2,0,2,1,3,4,4,3,7,8,9,11,12,11,15,15,17,21,49,43,54,63,75,85,97,113,129,135,147,149,149,123,129,127,122,143,157,144,139,123,117,141,138,124,134,158,151,136,133,121,117,122,125,117,111,98,94,92,89,73,87,91,88,94,90,93,76,60,96,71,80,71,63,65,47,74,63,78,68,55,48,51,45,48,50,71,48,35,51,69,62,64,66,51,59];
+    var seriesDeathMovingAverage = [0.28571428571429,0.28571428571429,0.57142857142857,0.71428571428571,1.1428571428571,1.7142857142857,2.2857142857143,2.4285714285714,3.4285714285714,4.2857142857143,5.4285714285714,6.5714285714286,7.7142857142857,8.7142857142857,10.428571428571,11.571428571429,12.857142857143,14.571428571429,20,24.428571428571,30.571428571429,37.428571428571,46,55.714285714286,66.571428571429,75.714285714286,88,99.571428571429,111.57142857143,122.14285714286,131.28571428571,135,137.28571428571,137,135.14285714286,134.57142857143,135.71428571429,135,137.28571428571,136.42857142857,135,137.71428571429,137,132.28571428571,130.85714285714,133.57142857143,137.57142857143,140.28571428571,139.14285714286,136.71428571429,135.71428571429,134,129.28571428571,124.42857142857,120.85714285714,115.85714285714,112,108.42857142857,103.71428571429,96.285714285714,92,89.142857142857,87.714285714286,87.714285714286,87.428571428571,88,88.428571428571,84.571428571429,85.285714285714,82.857142857143,80.857142857143,78.142857142857,73.857142857143,72.285714285714,70.428571428571,67.285714285714,66.142857142857,65.857142857143,65.428571428571,64.285714285714,61.857142857143,62.428571428571,58.285714285714,56.142857142857,52.142857142857,52.571428571429,51.571428571429,49.714285714286,49.714285714286,53.142857142857,55.142857142857,57.142857142857,56.428571428571,56.857142857143,60.285714285714];
+
+</script>
+<script src="/js/deaths-day.js?a=1590362289"></script>
+
+<script>
+    var seriesInfectedAcumulated = [2,5,18,28,43,61,95,139,245,388,593,978,1501,2336,2922,3513,4747,5823,6566,7161,8042,9000,10075,11364,12729,13938,14991,16169,17361,18407,19644,20610,21638,23049,24811,27017,29406,32332,35408,38309,41495,44605,47593,50468,53183,55743,58226,60500,62589,64586,66220,68192,70029,71686,73303,74877,76389,77995,79494,80868,82211,83505,84802,85996,87026,88194,89328,90481,91472,92584,93657,94640,95646,96448,97424,98647,99970,101650,103135,104691,106220,107603,109286,110767,112725,114533,116635,118392,120198,122492,124603,126949,129341,131652,133521];
+</script>
+<script src="/js/infected-acumulated.js?a=1590362289"></script>
+
+
+
+
+
+
+<script src="/js/jquery-3.5.1.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+
+
+
+    </body>
+</html>

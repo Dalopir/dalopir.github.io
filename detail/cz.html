@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Czechia Dashboard COVID-19</title>
+  </head>
+
+<body>
+
+<header class="navbar navbar-expand navbar-dark bg-primary flex-column flex-md-row bd-navbar mb-3">
+  <a class="navbar-brand mr-0 mr-md-2 p-0" href="/"><img src="/img/logo2.png?a=1590362294" alt="Logo"/></a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+        <!--
+      <li class="nav-item">
+        <a class="nav-link " href="/"><i class="fas fa-home mr-1"></i>Home</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link " href="/index.html"><i class="fas fa-table mr-1"></i>Data</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link active" href="/detail.html">Detail</a>
+      </li>-->
+      <li class="nav-item">
+        <a class="nav-link " href="/map.html"><i class="fas fa-globe mr-1"></i>Map</a>
+      </li>
+        <!--
+      <li class="nav-item">
+        <a class="nav-link " href="/oms-recomendations.html"><i class="fas fa-book-medical mr-1"></i>OMS Recomendations</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link " href="/aboutus.html"><i class="fas fa-info mr-1"></i>About us</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+
+<div class="container-fluid">
+    <h1>    <img src="https://www.countryflags.io/cz/flat/64.png">
+        Covid-19. Statistical data for Czechia</h1>
+    <p class="intro mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet nisl odio. Integer in sem tellus.
+        Cras condimentum magna vel facilisis scelerisque. Sed eros erat, vehicula at placerat non, vulputate vel leo.
+        Nullam auctor accumsan quam ut tincidunt. Nunc sed posuere augue.
+    </p>
+
+    <h2 class="mb-1">Infected by day</h2>
+    <p class="intro mb-4">
+        Number of Coronavirus COVID-19 infected each day in Czechia. Also the moving average of 7 days is included to reduce errors in the take of data.
+    </p>
+    <div id="container-infected" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day</h2>
+    <p class="intro mb-4">
+        Number of Coronavirus COVID-19 deaths each day in Czechia. Also the moving average of 7 days is included to reduce errors in the take of data.
+    </p>
+    <div id="container-deaths" class="mb-3"></div>
+
+    <h2 class="mb-1">Infected (acumulated)</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Czechia.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+</div>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script>
+
+    var seriesInfected = [125,116,158,260,271,354,352,186,184,307,200,350,233,381,115,235,195,295,257,163,99,160,68,52,105,217,116,57,140,154,133,99,55,86,79,52,41,59,75,103,55,18,26,38,77,78,57,46,18,28,53,45,48,82,55,49,20,111,61,74,33,59,77];
+    var seriesInfectedMovingAverage = [123.85714285714,134,142.57142857143,170,175.85714285714,206.57142857143,233.71428571429,242.42857142857,252.14285714286,273.42857142857,264.85714285714,276.14285714286,258.85714285714,263,252.85714285714,260.14285714286,244.14285714286,257.71428571429,244.42857142857,234.42857142857,194.14285714286,200.57142857143,176.71428571429,156.28571428571,129.14285714286,123.42857142857,116.71428571429,110.71428571429,107.85714285714,120.14285714286,131.71428571429,130.85714285714,107.71428571429,103.42857142857,106.57142857143,94,77.857142857143,67.285714285714,63.857142857143,70.714285714286,66.285714285714,57.571428571429,53.857142857143,53.428571428571,56,56.428571428571,49.857142857143,48.571428571429,48.571428571429,48.857142857143,51,46.428571428571,42.142857142857,45.714285714286,47,51.428571428571,50.285714285714,58.571428571429,60.857142857143,64.571428571429,57.571428571429,58.142857142857,62.142857142857];
+    var dateSeriesAxis = ["Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Abr, 1","Abr, 2","Abr, 3","Abr, 4","Abr, 5","Abr, 6","Abr, 7","Abr, 8","Abr, 9","Abr, 10","Abr, 11","Abr, 12","Abr, 13","Abr, 14","Abr, 15","Abr, 16","Abr, 17","Abr, 18","Abr, 19","Abr, 20","Abr, 21","Abr, 22","Abr, 23","Abr, 24","Abr, 25","Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23"];
+
+</script>
+<script src="/js/infected-day.js?a=1590362294"></script>
+
+<script>
+
+    var seriesDeath = [1,0,2,3,3,0,2,5,7,8,8,5,9,6,8,11,10,11,13,7,10,9,5,18,5,3,4,8,5,8,7,7,2,4,4,2,3,4,0,9,4,5,3,4,5,5,8,3,3,4,2,1,7,3,2,1,2,0,5,2,2,6,2];
+    var seriesDeathMovingAverage = [0.14285714285714,0.14285714285714,0.42857142857143,0.85714285714286,1.2857142857143,1.2857142857143,1.5714285714286,2.1428571428571,3.1428571428571,4,4.7142857142857,5,6.2857142857143,6.8571428571429,7.2857142857143,7.8571428571429,8.1428571428571,8.5714285714286,9.7142857142857,9.4285714285714,10,10.142857142857,9.2857142857143,10.428571428571,9.5714285714286,8.1428571428571,7.7142857142857,7.4285714285714,6.8571428571429,7.2857142857143,5.7142857142857,6,5.8571428571429,5.8571428571429,5.2857142857143,4.8571428571429,4.1428571428571,3.7142857142857,2.7142857142857,3.7142857142857,3.7142857142857,3.8571428571429,4,4.1428571428571,4.2857142857143,5,4.8571428571429,4.7142857142857,4.4285714285714,4.5714285714286,4.2857142857143,3.7142857142857,4,3.2857142857143,3.1428571428571,2.8571428571429,2.5714285714286,2.1428571428571,2.7142857142857,2,1.8571428571429,2.4285714285714,2.5714285714286];
+
+</script>
+<script src="/js/deaths-day.js?a=1590362294"></script>
+
+<script>
+    var seriesInfectedAcumulated = [1120,1236,1394,1654,1925,2279,2631,2817,3001,3308,3508,3858,4091,4472,4587,4822,5017,5312,5569,5732,5831,5991,6059,6111,6216,6433,6549,6606,6746,6900,7033,7132,7187,7273,7352,7404,7445,7504,7579,7682,7737,7755,7781,7819,7896,7974,8031,8077,8095,8123,8176,8221,8269,8351,8406,8455,8475,8586,8647,8721,8754,8813,8890];
+</script>
+<script src="/js/infected-acumulated.js?a=1590362294"></script>
+
+
+
+
+
+
+<script src="/js/jquery-3.5.1.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+
+
+
+    </body>
+</html>
