@@ -32,6 +32,7 @@ var pageInfectedObj = {
                 },
                 min:0,
                 max:me.getMaxOfArray(seriesInfectedAcumulated),
+                opposite: true
             }, ],
             tooltip: {
                 shared: true

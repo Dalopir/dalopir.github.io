@@ -64,6 +64,7 @@ var pageObj = {
                     '<tr><th>Deaths:</th><td  class="text-right">{point.deaths}</td></tr>' +
                     '<tr><th>Deaths by population:</th><td  class="text-right">{point.deathsByPopulation}</td></tr>' +
                     '<tr><th>Mortality Rate:</th><td class="text-right">{point.mortalityRate}</td></tr>' +
+                    '<tr><th>Days to duplicate:</th><td class="text-right">{point.duplicationRateStr}</td></tr>' +
                     '<tr><th class="mapbox-info" colspan="2">Click country to show detail</td></tr>'+
                     '<tr><th class="mapbox-info" colspan="2"></td></tr>'
                 ,

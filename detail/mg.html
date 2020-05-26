@@ -57,7 +57,7 @@
 
 
 <div class="container-fluid">
-    <h1>    <img src="https://www.countryflags.io/mg/flat/64.png">
+    <h1>    <img class="flag" src="https://www.countryflags.io/mg/flat/64.png">
         Covid-19. Statistical data for Madagascar</h1>
     <!--
     <p class="intro mb-4">
@@ -86,30 +86,6 @@
 
 </div>
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
-
-<script>
-
-    var seriesInfected = [21,18,4,45,34,43,40,39,15];
-    var seriesInfectedMovingAverage = [15.857142857143,19.428571428571,20,22.714285714286,25,30,29.285714285714,31.857142857143,31.428571428571];
-    var dateSeriesAxis = ["May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25"];
-
-</script>
-<script src="/js/infected-day.js"></script>
-
-<script>
-
-    var seriesDeath = [1,0,1,0,0,0,0,0,0];
-    var seriesDeathMovingAverage = [0.14285714285714,0.14285714285714,0.28571428571429,0.28571428571429,0.28571428571429,0.28571428571429,0.28571428571429,0.14285714285714,0.14285714285714];
-
-</script>
-<script src="/js/deaths-day.js"></script>
-
-<script>
-    var seriesInfectedAcumulated = [304,322,326,371,405,448,488,527,542];
-</script>
-<script src="/js/infected-acumulated.js"></script>
-
 
 
 
@@ -117,6 +93,32 @@
 
 <script src="/js/jquery-3.5.1.js"></script>
 <script src="/js/bootstrap.bundle.js"></script>
+<script src="/js/main.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <script>
+
+        var seriesInfected = [21,18,4,45,34,43,40,39,15];
+        var seriesInfectedMovingAverage = [15.857142857143,19.428571428571,20,22.714285714286,25,30,29.285714285714,31.857142857143,31.428571428571];
+        var dateSeriesAxis = ["May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25"];
+
+    </script>
+    <script src="/js/infected-day.js"></script>
+
+    <script>
+
+        var seriesDeath = [1,0,1,0,0,0,0,0,0];
+        var seriesDeathMovingAverage = [0.14285714285714,0.14285714285714,0.28571428571429,0.28571428571429,0.28571428571429,0.28571428571429,0.28571428571429,0.14285714285714,0.14285714285714];
+
+    </script>
+    <script src="/js/deaths-day.js"></script>
+
+    <script>
+        var seriesInfectedAcumulated = [304,322,326,371,405,448,488,527,542];
+    </script>
+    <script src="/js/infected-acumulated.js"></script>
+
 
 
 

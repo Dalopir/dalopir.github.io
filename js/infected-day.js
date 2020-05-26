@@ -7,6 +7,43 @@ var pageInfectedObj = {
     },
     init: function() {
         var me=this;
+        var yAxis =[{ // Primary yAxis
+            labels: {
+                format: '{value}',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+            title: {
+                text: 'Reported cases',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+            min:0,
+            max:Math.max( me.getMaxOfArray(seriesInfected), me.getMaxOfArray(seriesInfectedMovingAverage)),
+        }];
+        if (!mobileCheck()) {
+            yAxis.push(
+                { // Secondary yAxis
+                    title: {
+                        text: 'Reported cases',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    labels: {
+                        format: '{value}',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    min:0,
+                    max:Math.max( me.getMaxOfArray(seriesInfected), me.getMaxOfArray(seriesInfectedMovingAverage)),
+                    opposite: true
+                }
+            )
+        }
         Highcharts.chart('container-infected', {
             chart: {
                 zoomType: 'xy'
@@ -17,38 +54,7 @@ var pageInfectedObj = {
                 categories: dateSeriesAxis,
                 crosshair: true
             }],
-            yAxis: [{ // Primary yAxis
-                labels: {
-                    format: '{value}',
-                    style: {
-                        color: Highcharts.getOptions().colors[1]
-                    }
-                },
-                title: {
-                    text: 'Reported cases',
-                    style: {
-                        color: Highcharts.getOptions().colors[1]
-                    }
-                },
-                min:0,
-                max:Math.max( me.getMaxOfArray(seriesInfected), me.getMaxOfArray(seriesInfectedMovingAverage)),
-            }, { // Secondary yAxis
-                title: {
-                    text: 'Reported cases',
-                    style: {
-                        color: Highcharts.getOptions().colors[0]
-                    }
-                },
-                labels: {
-                    format: '{value}',
-                    style: {
-                        color: Highcharts.getOptions().colors[0]
-                    }
-                },
-                min:0,
-                max:Math.max( me.getMaxOfArray(seriesInfected), me.getMaxOfArray(seriesInfectedMovingAverage)),
-                opposite: true
-            }],
+            yAxis: yAxis,
             tooltip: {
                 shared: true
             },
