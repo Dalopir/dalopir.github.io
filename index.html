@@ -34,7 +34,7 @@
       </li>
       -->
       <li class="nav-item">
-        <a class="nav-link active" href="/index.html"><i class="fas fa-table mr-1"></i>Data</a>
+        <a class="nav-link active" href="/"><i class="fas fa-table mr-1"></i>Data</a>
       </li>
       <!--<li class="nav-item">
         <a class="nav-link " href="/detail.html">Detail</a>
@@ -64,7 +64,8 @@
         <li><strong>Infected. Total (∑):</strong> Total acumulated infected cases for Covid-19.</li>
         <li><strong>Infected. New cases (&Delta;):</strong> New infected cases for Covid-19</li>
         <li><strong>Infected. Percentage of growth (&Delta; %):</strong> Percentage of growth of infected cases for Covid-19.</li>
-        <li><strong>Infected. Percentage of growth (&Delta; % 3 days):</strong> Percentage (3 days moving average) of grow of infected cases for Covid-19.</li>
+<!--        <li><strong>Infected. Percentage of growth (&Delta; % 3 days):</strong> Percentage (3 days moving average) of grow of infected cases for Covid-19.</li> -->
+        <li><strong>Infected. By population:</strong> Nomber of infected cases for Covid-19 by 100,000 habitants.</li>
         <li><strong>Infected. Days Duplication:</strong> Number of days for duplication of the infected cases (if same new cases). It is ∞ when the new cases is 0.</li>
         <li><strong>Deaths. Total (∑):</strong> Total acumulated deaths for Covid-19.</li>
         <li><strong>Deaths. New cases (&Delta;):</strong> New deaths infected cases for Covid-19</li>
@@ -104,8 +105,8 @@
                     <th class="text-nowrap text-center" title="Percentage of growth of infected cases for Covid-19">
                         &Delta; %
                     </th>
-                    <th class="text-nowrap text-center" title="Percentage (3 days moving average) of grow of infected cases for Covid-19">
-                        &Delta; %<span class="extra-small">3 days</span>
+                    <th class="text-nowrap text-center extra-small" title="Percentage (3 days moving average) of grow of infected cases for Covid-19">
+                        By<br>population
                     </th>
                     <th class="text-nowrap extra-small" title="Number of days for duplication of the infected cases (if same new cases)" style="border-right: 2px solid #454d55;">
                         Days to<br/>Duplicate
@@ -132,7 +133,7 @@
                         <td class="text-right">1,662,768</td>
                         <td class="text-right">19,056</td>
                         <td class="text-right">-7.6%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">30</td>
                         <td class="text-right
                                                         ">87</td>
                         <td class="text-right">98,223</td>
@@ -146,7 +147,7 @@
                         <td class="text-right">374,898</td>
                         <td class="text-right">11,687</td>
                         <td class="text-right">-26.1%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">11</td>
                         <td class="text-right
                                                         ">32</td>
                         <td class="text-right">23,473</td>
@@ -160,7 +161,7 @@
                         <td class="text-right">362,342</td>
                         <td class="text-right">8,946</td>
                         <td class="text-right">+4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">3</td>
                         <td class="text-right
                                                         ">40</td>
                         <td class="text-right">3,807</td>
@@ -174,7 +175,7 @@
                         <td class="text-right">262,547</td>
                         <td class="text-right">1,631</td>
                         <td class="text-right">-32.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">55</td>
                         <td class="text-right
                                                         ">160</td>
                         <td class="text-right">36,996</td>
@@ -188,7 +189,7 @@
                         <td class="text-right">235,400</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">57</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">26,834</td>
@@ -202,7 +203,7 @@
                         <td class="text-right">230,158</td>
                         <td class="text-right">300</td>
                         <td class="text-right">-43.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">54</td>
                         <td class="text-right
                                                         ">767</td>
                         <td class="text-right">32,877</td>
@@ -216,7 +217,7 @@
                         <td class="text-right">183,067</td>
                         <td class="text-right">358</td>
                         <td class="text-right">-46.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">44</td>
                         <td class="text-right
                                                         ">511</td>
                         <td class="text-right">28,460</td>
@@ -230,7 +231,7 @@
                         <td class="text-right">180,802</td>
                         <td class="text-right">272</td>
                         <td class="text-right">-20.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">10</td>
                         <td class="text-right
                                                         ">664</td>
                         <td class="text-right">8,323</td>
@@ -244,7 +245,7 @@
                         <td class="text-right">157,814</td>
                         <td class="text-right">987</td>
                         <td class="text-right">-13.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">5</td>
                         <td class="text-right
                                                         ">159</td>
                         <td class="text-right">4,369</td>
@@ -255,16 +256,16 @@
                                                         <tr>
                         <td><a href="detail/in.html">India</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-in.png"/></td>
-                        <td class="text-right">146,208</td>
+                        <td class="text-right">146,371</td>
                         <td class="text-right">6,414</td>
                         <td class="text-right">-9.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">22</td>
                         <td class="text-right">4,187</td>
                         <td class="text-right">148</td>
-                        <td class="text-right">61,052</td>
-                        <td class="text-right">80,969</td>
+                        <td class="text-right">61,151</td>
+                        <td class="text-right">81,033</td>
                     </tr>
                                                         <tr>
                         <td><a href="detail/ir.html">Iran</a></td>
@@ -272,7 +273,7 @@
                         <td class="text-right">137,724</td>
                         <td class="text-right">2,023</td>
                         <td class="text-right">-7.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">9</td>
                         <td class="text-right
                                                         ">68</td>
                         <td class="text-right">7,451</td>
@@ -286,7 +287,7 @@
                         <td class="text-right">123,979</td>
                         <td class="text-right">4,020</td>
                         <td class="text-right">-4.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">11</td>
                         <td class="text-right
                                                         ">30</td>
                         <td class="text-right">3,629</td>
@@ -300,7 +301,7 @@
                         <td class="text-right">87,122</td>
                         <td class="text-right">1,013</td>
                         <td class="text-right">+6.1%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">18</td>
                         <td class="text-right
                                                         ">86</td>
                         <td class="text-right">6,655</td>
@@ -314,7 +315,7 @@
                         <td class="text-right">84,102</td>
                         <td class="text-right">7</td>
                         <td class="text-right">-36.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">12,014</td>
                         <td class="text-right">4,638</td>
@@ -328,7 +329,7 @@
                         <td class="text-right">74,795</td>
                         <td class="text-right">2,235</td>
                         <td class="text-right">-6.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">33</td>
                         <td class="text-right">399</td>
@@ -342,7 +343,7 @@
                         <td class="text-right">73,997</td>
                         <td class="text-right">4,895</td>
                         <td class="text-right">+32%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">4</td>
                         <td class="text-right
                                                         ">15</td>
                         <td class="text-right">761</td>
@@ -356,7 +357,7 @@
                         <td class="text-right">71,105</td>
                         <td class="text-right">2,485</td>
                         <td class="text-right">-10.1%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">6</td>
                         <td class="text-right
                                                         ">28</td>
                         <td class="text-right">7,633</td>
@@ -370,7 +371,7 @@
                         <td class="text-right">57,705</td>
                         <td class="text-right">1,748</td>
                         <td class="text-right">-19.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">33</td>
                         <td class="text-right">1,197</td>
@@ -384,7 +385,7 @@
                         <td class="text-right">57,455</td>
                         <td class="text-right">250</td>
                         <td class="text-right">-11.3%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">81</td>
                         <td class="text-right
                                                         ">229</td>
                         <td class="text-right">9,334</td>
@@ -398,7 +399,7 @@
                         <td class="text-right">45,647</td>
                         <td class="text-right">210</td>
                         <td class="text-right">+22.1%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">34</td>
                         <td class="text-right
                                                         ">217</td>
                         <td class="text-right">5,849</td>
@@ -412,7 +413,7 @@
                         <td class="text-right">45,465</td>
                         <td class="text-right">1,751</td>
                         <td class="text-right">+16.7%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">25</td>
                         <td class="text-right">26</td>
@@ -421,12 +422,26 @@
                         <td class="text-right">35,076</td>
                     </tr>
                                                         <tr>
+                        <td><a href="detail/by.html">Belarus</a></td>
+                        <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-by.png"/></td>
+                        <td class="text-right">38,059</td>
+                        <td class="text-right">946</td>
+                        <td class="text-right">-0.8%</td>
+                        <td class="text-right">2</td>
+                        <td class="text-right
+                                                        ">40</td>
+                        <td class="text-right">208</td>
+                        <td class="text-right">5</td>
+                        <td class="text-right">15,086</td>
+                        <td class="text-right">22,765</td>
+                    </tr>
+                                                        <tr>
                         <td><a href="detail/ec.html">Ecuador</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-ec.png"/></td>
                         <td class="text-right">37,355</td>
                         <td class="text-right">599</td>
                         <td class="text-right">+20.3%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">18</td>
                         <td class="text-right
                                                         ">62</td>
                         <td class="text-right">3,203</td>
@@ -435,26 +450,12 @@
                         <td class="text-right">16,149</td>
                     </tr>
                                                         <tr>
-                        <td><a href="detail/by.html">Belarus</a></td>
-                        <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-by.png"/></td>
-                        <td class="text-right">37,144</td>
-                        <td class="text-right">946</td>
-                        <td class="text-right">-0.8%</td>
-                        <td class="text-right">-100%</td>
-                        <td class="text-right
-                                                        ">39</td>
-                        <td class="text-right">204</td>
-                        <td class="text-right">5</td>
-                        <td class="text-right">14,449</td>
-                        <td class="text-right">22,491</td>
-                    </tr>
-                                                        <tr>
                         <td><a href="detail/bd.html">Bangladesh</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-bd.png"/></td>
                         <td class="text-right">36,751</td>
                         <td class="text-right">1,975</td>
                         <td class="text-right">+28.9%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">18</td>
                         <td class="text-right">522</td>
@@ -468,7 +469,7 @@
                         <td class="text-right">33,843</td>
                         <td class="text-right">384</td>
                         <td class="text-right">+41.7%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">40</td>
                         <td class="text-right
                                                         ">88</td>
                         <td class="text-right">4,029</td>
@@ -482,7 +483,7 @@
                         <td class="text-right">32,343</td>
                         <td class="text-right">344</td>
                         <td class="text-right">-37.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">94</td>
                         <td class="text-right">23</td>
@@ -491,12 +492,26 @@
                         <td class="text-right">16,582</td>
                     </tr>
                                                         <tr>
+                        <td><a href="detail/ae.html">United Arab Emirates</a></td>
+                        <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-ae.png"/></td>
+                        <td class="text-right">31,086</td>
+                        <td class="text-right">822</td>
+                        <td class="text-right">+5.2%</td>
+                        <td class="text-right">3</td>
+                        <td class="text-right
+                                                        ">37</td>
+                        <td class="text-right">253</td>
+                        <td class="text-right">3</td>
+                        <td class="text-right">15,982</td>
+                        <td class="text-right">14,851</td>
+                    </tr>
+                                                        <tr>
                         <td><a href="detail/pt.html">Portugal</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-pt.png"/></td>
                         <td class="text-right">30,788</td>
                         <td class="text-right">165</td>
                         <td class="text-right">+8.6%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">13</td>
                         <td class="text-right
                                                         ">186</td>
                         <td class="text-right">1,330</td>
@@ -507,30 +522,16 @@
                                                         <tr>
                         <td><a href="detail/ch.html">Switzerland</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-ch.png"/></td>
-                        <td class="text-right">30,746</td>
+                        <td class="text-right">30,761</td>
                         <td class="text-right">10</td>
                         <td class="text-right">-9.1%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">22</td>
                         <td class="text-right
-                                                        ">3,074</td>
+                                                        ">3,076</td>
                         <td class="text-right">1,913</td>
                         <td class="text-right">7</td>
                         <td class="text-right">28,200</td>
-                        <td class="text-right">633</td>
-                    </tr>
-                                                        <tr>
-                        <td><a href="detail/ae.html">United Arab Emirates</a></td>
-                        <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-ae.png"/></td>
-                        <td class="text-right">30,307</td>
-                        <td class="text-right">822</td>
-                        <td class="text-right">+5.2%</td>
-                        <td class="text-right">-100%</td>
-                        <td class="text-right
-                                                        ">36</td>
-                        <td class="text-right">248</td>
-                        <td class="text-right">3</td>
-                        <td class="text-right">15,657</td>
-                        <td class="text-right">14,402</td>
+                        <td class="text-right">648</td>
                     </tr>
                                                         <tr>
                         <td><a href="detail/ie.html">Ireland</a></td>
@@ -538,7 +539,7 @@
                         <td class="text-right">24,698</td>
                         <td class="text-right">59</td>
                         <td class="text-right">+3.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">33</td>
                         <td class="text-right
                                                         ">418</td>
                         <td class="text-right">1,606</td>
@@ -552,7 +553,7 @@
                         <td class="text-right">23,615</td>
                         <td class="text-right">1,032</td>
                         <td class="text-right">-16.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">22</td>
                         <td class="text-right">481</td>
@@ -566,7 +567,7 @@
                         <td class="text-right">23,165</td>
                         <td class="text-right">479</td>
                         <td class="text-right">-8.9%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">48</td>
                         <td class="text-right">1,418</td>
@@ -575,12 +576,26 @@
                         <td class="text-right">15,870</td>
                     </tr>
                                                         <tr>
+                        <td><a href="detail/kw.html">Kuwait</a></td>
+                        <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-kw.png"/></td>
+                        <td class="text-right">22,575</td>
+                        <td class="text-right">665</td>
+                        <td class="text-right">-20.6%</td>
+                        <td class="text-right">4</td>
+                        <td class="text-right
+                                                        ">33</td>
+                        <td class="text-right">172</td>
+                        <td class="text-right">9</td>
+                        <td class="text-right">7,306</td>
+                        <td class="text-right">15,097</td>
+                    </tr>
+                                                        <tr>
                         <td><a href="detail/co.html">Colombia</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-co.png"/></td>
                         <td class="text-right">21,981</td>
                         <td class="text-right">806</td>
                         <td class="text-right">-19.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">27</td>
                         <td class="text-right">750</td>
@@ -589,26 +604,12 @@
                         <td class="text-right">15,966</td>
                     </tr>
                                                         <tr>
-                        <td><a href="detail/kw.html">Kuwait</a></td>
-                        <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-kw.png"/></td>
-                        <td class="text-right">21,967</td>
-                        <td class="text-right">665</td>
-                        <td class="text-right">-20.6%</td>
-                        <td class="text-right">-100%</td>
-                        <td class="text-right
-                                                        ">33</td>
-                        <td class="text-right">165</td>
-                        <td class="text-right">9</td>
-                        <td class="text-right">6,621</td>
-                        <td class="text-right">15,181</td>
-                    </tr>
-                                                        <tr>
                         <td><a href="detail/pl.html">Poland</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-pl.png"/></td>
                         <td class="text-right">21,867</td>
                         <td class="text-right">305</td>
                         <td class="text-right">-22.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">3</td>
                         <td class="text-right
                                                         ">71</td>
                         <td class="text-right">1,013</td>
@@ -622,7 +623,7 @@
                         <td class="text-right">21,584</td>
                         <td class="text-right">259</td>
                         <td class="text-right">-36.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">83</td>
                         <td class="text-right">644</td>
@@ -633,16 +634,16 @@
                                                         <tr>
                         <td><a href="detail/ro.html">Romania</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-ro.png"/></td>
-                        <td class="text-right">18,283</td>
+                        <td class="text-right">18,429</td>
                         <td class="text-right">213</td>
                         <td class="text-right">0%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">6</td>
                         <td class="text-right
-                                                        ">85</td>
+                                                        ">86</td>
                         <td class="text-right">1,210</td>
                         <td class="text-right">20</td>
-                        <td class="text-right">11,630</td>
-                        <td class="text-right">5,443</td>
+                        <td class="text-right">11,874</td>
+                        <td class="text-right">5,345</td>
                     </tr>
                                                         <tr>
                         <td><a href="detail/eg.html">Egypt</a></td>
@@ -650,7 +651,7 @@
                         <td class="text-right">17,967</td>
                         <td class="text-right">702</td>
                         <td class="text-right">-6.6%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">25</td>
                         <td class="text-right">783</td>
@@ -664,7 +665,7 @@
                         <td class="text-right">16,743</td>
                         <td class="text-right">17</td>
                         <td class="text-right">+240%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">3</td>
                         <td class="text-right
                                                         ">984</td>
                         <td class="text-right">281</td>
@@ -678,7 +679,7 @@
                         <td class="text-right">16,581</td>
                         <td class="text-right">31</td>
                         <td class="text-right">+121.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">534</td>
                         <td class="text-right">830</td>
@@ -692,7 +693,7 @@
                         <td class="text-right">16,557</td>
                         <td class="text-right">36</td>
                         <td class="text-right">+111.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">7</td>
                         <td class="text-right
                                                         ">459</td>
                         <td class="text-right">643</td>
@@ -706,7 +707,7 @@
                         <td class="text-right">15,073</td>
                         <td class="text-right">272</td>
                         <td class="text-right">-28.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">4</td>
                         <td class="text-right
                                                         ">55</td>
                         <td class="text-right">460</td>
@@ -720,7 +721,7 @@
                         <td class="text-right">14,669</td>
                         <td class="text-right">284</td>
                         <td class="text-right">+10.1%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">51</td>
                         <td class="text-right">886</td>
@@ -734,7 +735,7 @@
                         <td class="text-right">12,628</td>
                         <td class="text-right">552</td>
                         <td class="text-right">-23.7%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">22</td>
                         <td class="text-right">467</td>
@@ -748,7 +749,7 @@
                         <td class="text-right">11,831</td>
                         <td class="text-right">591</td>
                         <td class="text-right">+1.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">20</td>
                         <td class="text-right">220</td>
@@ -762,7 +763,7 @@
                         <td class="text-right">11,586</td>
                         <td class="text-right">27</td>
                         <td class="text-right">-62.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">10</td>
                         <td class="text-right
                                                         ">429</td>
                         <td class="text-right">563</td>
@@ -776,7 +777,7 @@
                         <td class="text-right">11,225</td>
                         <td class="text-right">19</td>
                         <td class="text-right">+18.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">590</td>
                         <td class="text-right">269</td>
@@ -790,7 +791,7 @@
                         <td class="text-right">11,193</td>
                         <td class="text-right">34</td>
                         <td class="text-right">-49.3%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">3</td>
                         <td class="text-right
                                                         ">329</td>
                         <td class="text-right">239</td>
@@ -804,7 +805,7 @@
                         <td class="text-right">11,183</td>
                         <td class="text-right">257</td>
                         <td class="text-right">-26.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">7</td>
                         <td class="text-right
                                                         ">43</td>
                         <td class="text-right">310</td>
@@ -818,7 +819,7 @@
                         <td class="text-right">9,171</td>
                         <td class="text-right">33</td>
                         <td class="text-right">-90.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">277</td>
                         <td class="text-right">14</td>
@@ -832,7 +833,7 @@
                         <td class="text-right">9,002</td>
                         <td class="text-right">47</td>
                         <td class="text-right">-27.7%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">3</td>
                         <td class="text-right
                                                         ">191</td>
                         <td class="text-right">317</td>
@@ -846,7 +847,7 @@
                         <td class="text-right">8,969</td>
                         <td class="text-right">438</td>
                         <td class="text-right">-28.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">20</td>
                         <td class="text-right">35</td>
@@ -860,7 +861,7 @@
                         <td class="text-right">8,503</td>
                         <td class="text-right">197</td>
                         <td class="text-right">+2.1%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">43</td>
                         <td class="text-right">609</td>
@@ -874,7 +875,7 @@
                         <td class="text-right">8,364</td>
                         <td class="text-right">12</td>
                         <td class="text-right">+100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">4</td>
                         <td class="text-right
                                                         ">697</td>
                         <td class="text-right">235</td>
@@ -883,12 +884,26 @@
                         <td class="text-right">402</td>
                     </tr>
                                                         <tr>
+                        <td><a href="detail/om.html">Oman</a></td>
+                        <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-om.png"/></td>
+                        <td class="text-right">8,118</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
+                        <td class="text-right
+                            infinitum                            ">999999</td>
+                        <td class="text-right">37</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">2,067</td>
+                        <td class="text-right">6,014</td>
+                    </tr>
+                                                        <tr>
                         <td><a href="detail/ng.html">Nigeria</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-ng.png"/></td>
                         <td class="text-right">8,068</td>
                         <td class="text-right">229</td>
                         <td class="text-right">-26.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">35</td>
                         <td class="text-right">233</td>
@@ -897,26 +912,12 @@
                         <td class="text-right">5,524</td>
                     </tr>
                                                         <tr>
-                        <td><a href="detail/om.html">Oman</a></td>
-                        <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-om.png"/></td>
-                        <td class="text-right">7,770</td>
-                        <td class="text-right">0</td>
-                        <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
-                        <td class="text-right
-                            infinitum                            ">999999</td>
-                        <td class="text-right">37</td>
-                        <td class="text-right">0</td>
-                        <td class="text-right">1,933</td>
-                        <td class="text-right">5,800</td>
-                    </tr>
-                                                        <tr>
                         <td><a href="detail/my.html">Malaysia</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-my.png"/></td>
                         <td class="text-right">7,604</td>
                         <td class="text-right">172</td>
                         <td class="text-right">+186.7%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">44</td>
                         <td class="text-right">115</td>
@@ -927,16 +928,16 @@
                                                         <tr>
                         <td><a href="detail/ma.html">Morocco</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-ma.png"/></td>
-                        <td class="text-right">7,532</td>
+                        <td class="text-right">7,556</td>
                         <td class="text-right">99</td>
                         <td class="text-right">+266.7%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">76</td>
-                        <td class="text-right">200</td>
+                        <td class="text-right">202</td>
                         <td class="text-right">1</td>
-                        <td class="text-right">4,774</td>
-                        <td class="text-right">2,558</td>
+                        <td class="text-right">4,841</td>
+                        <td class="text-right">2,513</td>
                     </tr>
                                                         <tr>
                         <td><a href="detail/am.html">Armenia</a></td>
@@ -944,7 +945,7 @@
                         <td class="text-right">7,402</td>
                         <td class="text-right">452</td>
                         <td class="text-right">+25.9%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">3</td>
                         <td class="text-right
                                                         ">16</td>
                         <td class="text-right">91</td>
@@ -958,7 +959,7 @@
                         <td class="text-right">7,147</td>
                         <td class="text-right">54</td>
                         <td class="text-right">-45.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">6</td>
                         <td class="text-right
                                                         ">132</td>
                         <td class="text-right">261</td>
@@ -972,7 +973,7 @@
                         <td class="text-right">7,133</td>
                         <td class="text-right">12</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">594</td>
                         <td class="text-right">102</td>
@@ -986,7 +987,7 @@
                         <td class="text-right">6,808</td>
                         <td class="text-right">125</td>
                         <td class="text-right">+89.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">54</td>
                         <td class="text-right">32</td>
@@ -1000,7 +1001,7 @@
                         <td class="text-right">6,660</td>
                         <td class="text-right">397</td>
                         <td class="text-right">+14.1%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">2</td>
                         <td class="text-right
                                                         ">16</td>
                         <td class="text-right">261</td>
@@ -1014,7 +1015,7 @@
                         <td class="text-right">6,628</td>
                         <td class="text-right">20</td>
                         <td class="text-right">+81.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">6</td>
                         <td class="text-right
                                                         ">331</td>
                         <td class="text-right">308</td>
@@ -1028,7 +1029,7 @@
                         <td class="text-right">5,044</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">171</td>
@@ -1042,7 +1043,7 @@
                         <td class="text-right">4,632</td>
                         <td class="text-right">163</td>
                         <td class="text-right">-17.3%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">28</td>
                         <td class="text-right">163</td>
@@ -1056,7 +1057,7 @@
                         <td class="text-right">4,271</td>
                         <td class="text-right">149</td>
                         <td class="text-right">+6.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">28</td>
                         <td class="text-right">51</td>
@@ -1070,7 +1071,7 @@
                         <td class="text-right">4,189</td>
                         <td class="text-right">239</td>
                         <td class="text-right">-49.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">2</td>
                         <td class="text-right
                                                         ">17</td>
                         <td class="text-right">182</td>
@@ -1084,7 +1085,7 @@
                         <td class="text-right">3,993</td>
                         <td class="text-right">1</td>
                         <td class="text-right">-50%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">18</td>
                         <td class="text-right
                                                         ">3,993</td>
                         <td class="text-right">110</td>
@@ -1098,7 +1099,7 @@
                         <td class="text-right">3,976</td>
                         <td class="text-right">156</td>
                         <td class="text-right">-18.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">25</td>
                         <td class="text-right">170</td>
@@ -1112,7 +1113,7 @@
                         <td class="text-right">3,771</td>
                         <td class="text-right">15</td>
                         <td class="text-right">-46.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">5</td>
                         <td class="text-right
                                                         ">251</td>
                         <td class="text-right">499</td>
@@ -1126,7 +1127,7 @@
                         <td class="text-right">3,760</td>
                         <td class="text-right">336</td>
                         <td class="text-right">-9.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">11</td>
                         <td class="text-right">59</td>
@@ -1140,7 +1141,7 @@
                         <td class="text-right">3,275</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">20</td>
@@ -1154,7 +1155,7 @@
                         <td class="text-right">3,261</td>
                         <td class="text-right">25</td>
                         <td class="text-right">-49%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">130</td>
                         <td class="text-right">13</td>
@@ -1165,16 +1166,16 @@
                                                         <tr>
                         <td><a href="detail/sn.html">Senegal</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-sn.png"/></td>
-                        <td class="text-right">3,130</td>
+                        <td class="text-right">3,161</td>
                         <td class="text-right">83</td>
                         <td class="text-right">+16.9%</td>
-                        <td class="text-right">-100%</td>
-                        <td class="text-right
-                                                        ">37</td>
-                        <td class="text-right">35</td>
                         <td class="text-right">0</td>
-                        <td class="text-right">1,515</td>
-                        <td class="text-right">1,580</td>
+                        <td class="text-right
+                                                        ">38</td>
+                        <td class="text-right">36</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">1,565</td>
+                        <td class="text-right">1,560</td>
                     </tr>
                                                         <tr>
                         <td><a href="detail/tj.html">Tajikistan</a></td>
@@ -1182,7 +1183,7 @@
                         <td class="text-right">3,100</td>
                         <td class="text-right">171</td>
                         <td class="text-right">-10.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">18</td>
                         <td class="text-right">46</td>
@@ -1196,7 +1197,7 @@
                         <td class="text-right">3,045</td>
                         <td class="text-right">2</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">1,522</td>
                         <td class="text-right">57</td>
@@ -1210,7 +1211,7 @@
                         <td class="text-right">2,882</td>
                         <td class="text-right">4</td>
                         <td class="text-right">+100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">2</td>
                         <td class="text-right
                                                         ">720</td>
                         <td class="text-right">172</td>
@@ -1224,7 +1225,7 @@
                         <td class="text-right">2,468</td>
                         <td class="text-right">198</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">12</td>
                         <td class="text-right">14</td>
@@ -1238,7 +1239,7 @@
                         <td class="text-right">2,443</td>
                         <td class="text-right">6</td>
                         <td class="text-right">-68.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">2</td>
                         <td class="text-right
                                                         ">407</td>
                         <td class="text-right">130</td>
@@ -1252,7 +1253,7 @@
                         <td class="text-right">2,423</td>
                         <td class="text-right">47</td>
                         <td class="text-right">+370%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">51</td>
                         <td class="text-right">30</td>
@@ -1266,7 +1267,7 @@
                         <td class="text-right">2,406</td>
                         <td class="text-right">5</td>
                         <td class="text-right">-50%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">4</td>
                         <td class="text-right
                                                         ">481</td>
                         <td class="text-right">146</td>
@@ -1280,7 +1281,7 @@
                         <td class="text-right">2,403</td>
                         <td class="text-right">156</td>
                         <td class="text-right">+34.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">15</td>
                         <td class="text-right">68</td>
@@ -1294,7 +1295,7 @@
                         <td class="text-right">2,244</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">2</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">100</td>
@@ -1308,7 +1309,7 @@
                         <td class="text-right">2,135</td>
                         <td class="text-right">201</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">10</td>
                         <td class="text-right">14</td>
@@ -1322,7 +1323,7 @@
                         <td class="text-right">2,042</td>
                         <td class="text-right">68</td>
                         <td class="text-right">-29.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">30</td>
                         <td class="text-right">36</td>
@@ -1336,7 +1337,7 @@
                         <td class="text-right">1,999</td>
                         <td class="text-right">21</td>
                         <td class="text-right">-43.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">5</td>
                         <td class="text-right
                                                         ">95</td>
                         <td class="text-right">113</td>
@@ -1350,7 +1351,7 @@
                         <td class="text-right">1,947</td>
                         <td class="text-right">6</td>
                         <td class="text-right">-40%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">324</td>
                         <td class="text-right">82</td>
@@ -1364,7 +1365,7 @@
                         <td class="text-right">1,834</td>
                         <td class="text-right">1</td>
                         <td class="text-right">-50%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">5</td>
                         <td class="text-right
                                                         ">1,834</td>
                         <td class="text-right">65</td>
@@ -1378,7 +1379,7 @@
                         <td class="text-right">1,804</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">3</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">10</td>
@@ -1392,7 +1393,7 @@
                         <td class="text-right">1,689</td>
                         <td class="text-right">95</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">17</td>
                         <td class="text-right">66</td>
@@ -1406,7 +1407,7 @@
                         <td class="text-right">1,639</td>
                         <td class="text-right">12</td>
                         <td class="text-right">+71.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">2</td>
                         <td class="text-right
                                                         ">136</td>
                         <td class="text-right">65</td>
@@ -1420,7 +1421,7 @@
                         <td class="text-right">1,513</td>
                         <td class="text-right">2</td>
                         <td class="text-right">-60%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">756</td>
                         <td class="text-right">28</td>
@@ -1434,7 +1435,7 @@
                         <td class="text-right">1,504</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">21</td>
@@ -1448,7 +1449,7 @@
                         <td class="text-right">1,469</td>
                         <td class="text-right">1</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">5</td>
                         <td class="text-right
                                                         ">1,469</td>
                         <td class="text-right">107</td>
@@ -1462,7 +1463,7 @@
                         <td class="text-right">1,468</td>
                         <td class="text-right">30</td>
                         <td class="text-right">-21.1%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">48</td>
                         <td class="text-right">16</td>
@@ -1476,7 +1477,7 @@
                         <td class="text-right">1,395</td>
                         <td class="text-right">24</td>
                         <td class="text-right">-58.6%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">58</td>
                         <td class="text-right">4</td>
@@ -1490,7 +1491,7 @@
                         <td class="text-right">1,286</td>
                         <td class="text-right">72</td>
                         <td class="text-right">+227.3%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">17</td>
                         <td class="text-right">52</td>
@@ -1504,7 +1505,7 @@
                         <td class="text-right">1,182</td>
                         <td class="text-right">41</td>
                         <td class="text-right">-21.2%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">28</td>
                         <td class="text-right">10</td>
@@ -1518,7 +1519,7 @@
                         <td class="text-right">1,178</td>
                         <td class="text-right">64</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">18</td>
                         <td class="text-right">7</td>
@@ -1532,7 +1533,7 @@
                         <td class="text-right">1,177</td>
                         <td class="text-right">56</td>
                         <td class="text-right">-49.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">21</td>
                         <td class="text-right">10</td>
@@ -1546,7 +1547,7 @@
                         <td class="text-right">1,119</td>
                         <td class="text-right">5</td>
                         <td class="text-right">-70.6%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">223</td>
                         <td class="text-right">26</td>
@@ -1560,7 +1561,7 @@
                         <td class="text-right">1,063</td>
                         <td class="text-right">93</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">11</td>
                         <td class="text-right">31</td>
@@ -1574,7 +1575,7 @@
                         <td class="text-right">1,059</td>
                         <td class="text-right">29</td>
                         <td class="text-right">+93.3%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">36</td>
                         <td class="text-right">67</td>
@@ -1588,7 +1589,7 @@
                         <td class="text-right">1,053</td>
                         <td class="text-right">2</td>
                         <td class="text-right">+100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">526</td>
                         <td class="text-right">22</td>
@@ -1602,7 +1603,7 @@
                         <td class="text-right">1,051</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">48</td>
@@ -1616,7 +1617,7 @@
                         <td class="text-right">1,043</td>
                         <td class="text-right">83</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">12</td>
                         <td class="text-right">12</td>
@@ -1630,7 +1631,7 @@
                         <td class="text-right">1,038</td>
                         <td class="text-right">6</td>
                         <td class="text-right">-14.3%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">2</td>
                         <td class="text-right
                                                         ">173</td>
                         <td class="text-right">30</td>
@@ -1641,16 +1642,16 @@
                                                         <tr>
                         <td><a href="detail/al.html">Albania</a></td>
                         <td class="text-right"><img class="infected-small-image" src="/cache/image/infected-al.png"/></td>
-                        <td class="text-right">1,004</td>
+                        <td class="text-right">1,029</td>
                         <td class="text-right">6</td>
                         <td class="text-right">-33.3%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
-                                                        ">167</td>
-                        <td class="text-right">32</td>
+                                                        ">171</td>
+                        <td class="text-right">33</td>
                         <td class="text-right">0</td>
-                        <td class="text-right">795</td>
-                        <td class="text-right">177</td>
+                        <td class="text-right">803</td>
+                        <td class="text-right">193</td>
                     </tr>
                                                         <tr>
                         <td><a href="detail/cr.html">Costa Rica</a></td>
@@ -1658,7 +1659,7 @@
                         <td class="text-right">951</td>
                         <td class="text-right">21</td>
                         <td class="text-right">+75%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">45</td>
                         <td class="text-right">10</td>
@@ -1672,7 +1673,7 @@
                         <td class="text-right">951</td>
                         <td class="text-right">6</td>
                         <td class="text-right">+200%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">158</td>
                         <td class="text-right">62</td>
@@ -1686,7 +1687,7 @@
                         <td class="text-right">937</td>
                         <td class="text-right">2</td>
                         <td class="text-right">-75%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">468</td>
                         <td class="text-right">17</td>
@@ -1700,7 +1701,7 @@
                         <td class="text-right">920</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">7</td>
@@ -1714,7 +1715,7 @@
                         <td class="text-right">865</td>
                         <td class="text-right">3</td>
                         <td class="text-right">-75%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">288</td>
                         <td class="text-right">11</td>
@@ -1728,7 +1729,7 @@
                         <td class="text-right">832</td>
                         <td class="text-right">18</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">46</td>
                         <td class="text-right">52</td>
@@ -1742,7 +1743,7 @@
                         <td class="text-right">806</td>
                         <td class="text-right">151</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">5</td>
                         <td class="text-right">8</td>
@@ -1756,7 +1757,7 @@
                         <td class="text-right">787</td>
                         <td class="text-right">18</td>
                         <td class="text-right">+260%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">43</td>
                         <td class="text-right">22</td>
@@ -1770,7 +1771,7 @@
                         <td class="text-right">763</td>
                         <td class="text-right">1</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">66</td>
                         <td class="text-right
                                                         ">763</td>
                         <td class="text-right">51</td>
@@ -1784,7 +1785,7 @@
                         <td class="text-right">735</td>
                         <td class="text-right">28</td>
                         <td class="text-right">-67.4%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">26</td>
                         <td class="text-right">42</td>
@@ -1798,7 +1799,7 @@
                         <td class="text-right">732</td>
                         <td class="text-right">1</td>
                         <td class="text-right">-50%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">732</td>
                         <td class="text-right">12</td>
@@ -1812,7 +1813,7 @@
                         <td class="text-right">711</td>
                         <td class="text-right">3</td>
                         <td class="text-right">-25%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">237</td>
                         <td class="text-right">9</td>
@@ -1826,7 +1827,7 @@
                         <td class="text-right">687</td>
                         <td class="text-right">12</td>
                         <td class="text-right">-55.6%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">57</td>
                         <td class="text-right">61</td>
@@ -1840,7 +1841,7 @@
                         <td class="text-right">682</td>
                         <td class="text-right">79</td>
                         <td class="text-right">+315.8%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">8</td>
                         <td class="text-right">4</td>
@@ -1854,13 +1855,13 @@
                         <td class="text-right">666</td>
                         <td class="text-right">1</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">124</td>
                         <td class="text-right
                                                         ">666</td>
                         <td class="text-right">42</td>
                         <td class="text-right">0</td>
-                        <td class="text-right">270</td>
-                        <td class="text-right">354</td>
+                        <td class="text-right">275</td>
+                        <td class="text-right">349</td>
                     </tr>
                                                         <tr>
                         <td><a href="detail/et.html">Ethiopia</a></td>
@@ -1868,7 +1869,7 @@
                         <td class="text-right">655</td>
                         <td class="text-right">73</td>
                         <td class="text-right">-17%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">8</td>
                         <td class="text-right">5</td>
@@ -1882,7 +1883,7 @@
                         <td class="text-right">652</td>
                         <td class="text-right">48</td>
                         <td class="text-right">-7.7%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">13</td>
                         <td class="text-right">1</td>
@@ -1896,7 +1897,7 @@
                         <td class="text-right">611</td>
                         <td class="text-right">1</td>
                         <td class="text-right">0%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">611</td>
                         <td class="text-right">6</td>
@@ -1910,7 +1911,7 @@
                         <td class="text-right">556</td>
                         <td class="text-right">4</td>
                         <td class="text-right">+100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">139</td>
                         <td class="text-right">9</td>
@@ -1924,7 +1925,7 @@
                         <td class="text-right">542</td>
                         <td class="text-right">15</td>
                         <td class="text-right">-61.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">36</td>
                         <td class="text-right">2</td>
@@ -1938,7 +1939,7 @@
                         <td class="text-right">509</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">21</td>
@@ -1952,7 +1953,7 @@
                         <td class="text-right">487</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">16</td>
@@ -1966,7 +1967,7 @@
                         <td class="text-right">441</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">7</td>
@@ -1980,7 +1981,7 @@
                         <td class="text-right">423</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">3</td>
@@ -1994,7 +1995,7 @@
                         <td class="text-right">390</td>
                         <td class="text-right">10</td>
                         <td class="text-right">+11.1%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">39</td>
                         <td class="text-right">3</td>
@@ -2008,7 +2009,7 @@
                         <td class="text-right">386</td>
                         <td class="text-right">5</td>
                         <td class="text-right">-37.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">77</td>
                         <td class="text-right">13</td>
@@ -2022,7 +2023,7 @@
                         <td class="text-right">336</td>
                         <td class="text-right">9</td>
                         <td class="text-right">+350%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">37</td>
                         <td class="text-right">0</td>
@@ -2036,7 +2037,7 @@
                         <td class="text-right">334</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">10</td>
@@ -2050,7 +2051,7 @@
                         <td class="text-right">326</td>
                         <td class="text-right">1</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">326</td>
                         <td class="text-right">0</td>
@@ -2064,7 +2065,7 @@
                         <td class="text-right">324</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">9</td>
@@ -2078,7 +2079,7 @@
                         <td class="text-right">299</td>
                         <td class="text-right">48</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">5</td>
                         <td class="text-right
                                                         ">6</td>
                         <td class="text-right">11</td>
@@ -2092,7 +2093,7 @@
                         <td class="text-right">279</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">17</td>
@@ -2106,7 +2107,7 @@
                         <td class="text-right">265</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">26</td>
@@ -2120,7 +2121,7 @@
                         <td class="text-right">262</td>
                         <td class="text-right">25</td>
                         <td class="text-right">+150%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">10</td>
                         <td class="text-right">9</td>
@@ -2134,7 +2135,7 @@
                         <td class="text-right">256</td>
                         <td class="text-right">6</td>
                         <td class="text-right">-50%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">42</td>
                         <td class="text-right">2</td>
@@ -2148,7 +2149,7 @@
                         <td class="text-right">233</td>
                         <td class="text-right">11</td>
                         <td class="text-right">+10%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">21</td>
                         <td class="text-right">44</td>
@@ -2162,7 +2163,7 @@
                         <td class="text-right">222</td>
                         <td class="text-right">24</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">9</td>
                         <td class="text-right">0</td>
@@ -2176,7 +2177,7 @@
                         <td class="text-right">209</td>
                         <td class="text-right">15</td>
                         <td class="text-right">-42.3%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">13</td>
                         <td class="text-right">1</td>
@@ -2190,7 +2191,7 @@
                         <td class="text-right">203</td>
                         <td class="text-right">2</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">101</td>
                         <td class="text-right">6</td>
@@ -2204,7 +2205,7 @@
                         <td class="text-right">191</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">3</td>
@@ -2218,7 +2219,7 @@
                         <td class="text-right">141</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">1</td>
@@ -2232,7 +2233,7 @@
                         <td class="text-right">141</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2246,7 +2247,7 @@
                         <td class="text-right">137</td>
                         <td class="text-right">2</td>
                         <td class="text-right">-75%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                                                         ">68</td>
                         <td class="text-right">11</td>
@@ -2260,7 +2261,7 @@
                         <td class="text-right">124</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2274,7 +2275,7 @@
                         <td class="text-right">121</td>
                         <td class="text-right">20</td>
                         <td class="text-right">+25%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">6</td>
                         <td class="text-right">4</td>
@@ -2288,7 +2289,7 @@
                         <td class="text-right">116</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">8</td>
@@ -2302,7 +2303,7 @@
                         <td class="text-right">101</td>
                         <td class="text-right">18</td>
                         <td class="text-right">+1700%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">5</td>
                         <td class="text-right">4</td>
@@ -2316,7 +2317,7 @@
                         <td class="text-right">100</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">3</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">11</td>
@@ -2330,7 +2331,7 @@
                         <td class="text-right">98</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">10</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">4</td>
@@ -2344,7 +2345,7 @@
                         <td class="text-right">92</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">2</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">7</td>
@@ -2358,7 +2359,7 @@
                         <td class="text-right">87</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">1</td>
@@ -2372,7 +2373,7 @@
                         <td class="text-right">82</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">3</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">1</td>
@@ -2386,7 +2387,7 @@
                         <td class="text-right">75</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">3</td>
@@ -2400,7 +2401,7 @@
                         <td class="text-right">70</td>
                         <td class="text-right">1</td>
                         <td class="text-right">-87.5%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">70</td>
                         <td class="text-right">4</td>
@@ -2414,7 +2415,7 @@
                         <td class="text-right">56</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">4</td>
@@ -2428,7 +2429,7 @@
                         <td class="text-right">42</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">1</td>
@@ -2442,7 +2443,7 @@
                         <td class="text-right">39</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2456,13 +2457,13 @@
                         <td class="text-right">35</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">1</td>
                         <td class="text-right">0</td>
-                        <td class="text-right">19</td>
-                        <td class="text-right">15</td>
+                        <td class="text-right">20</td>
+                        <td class="text-right">14</td>
                     </tr>
                                                         <tr>
                         <td><a href="detail/bt.html">Bhutan</a></td>
@@ -2470,7 +2471,7 @@
                         <td class="text-right">27</td>
                         <td class="text-right">3</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">9</td>
                         <td class="text-right">0</td>
@@ -2484,7 +2485,7 @@
                         <td class="text-right">25</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">3</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">3</td>
@@ -2498,7 +2499,7 @@
                         <td class="text-right">25</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">1</td>
@@ -2512,7 +2513,7 @@
                         <td class="text-right">24</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2526,7 +2527,7 @@
                         <td class="text-right">23</td>
                         <td class="text-right">1</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                                                         ">23</td>
                         <td class="text-right">0</td>
@@ -2540,7 +2541,7 @@
                         <td class="text-right">21</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2554,7 +2555,7 @@
                         <td class="text-right">19</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2568,7 +2569,7 @@
                         <td class="text-right">18</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">1</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">2</td>
@@ -2582,7 +2583,7 @@
                         <td class="text-right">18</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2596,7 +2597,7 @@
                         <td class="text-right">18</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2610,7 +2611,7 @@
                         <td class="text-right">18</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2624,7 +2625,7 @@
                         <td class="text-right">16</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2638,7 +2639,7 @@
                         <td class="text-right">15</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2652,7 +2653,7 @@
                         <td class="text-right">12</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2666,7 +2667,7 @@
                         <td class="text-right">11</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2680,7 +2681,7 @@
                         <td class="text-right">11</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">1</td>
@@ -2694,7 +2695,7 @@
                         <td class="text-right">9</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2708,7 +2709,7 @@
                         <td class="text-right">8</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
@@ -2722,7 +2723,7 @@
                         <td class="text-right">2</td>
                         <td class="text-right">0</td>
                         <td class="text-right">-100%</td>
-                        <td class="text-right">-100%</td>
+                        <td class="text-right">0</td>
                         <td class="text-right
                             infinitum                            ">999999</td>
                         <td class="text-right">0</td>
