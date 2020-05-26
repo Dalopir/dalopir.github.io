@@ -56,9 +56,8 @@ var pageObj = {
             },
             tooltip: {
                 useHTML: true,
-                headerFormat: '<table class="dashtable">',
-                pointFormat: '<tr><th colspan="2"><h3><img src="https://www.countryflags.io/{point.key}/flat/64.png">{point.name}</h3></th></tr>' +
-                    '<tr><th colspan="2"><img src="{point.smallImage}"></td></tr>' +
+                pointFormat: '<table class="dashtable"><tr><th colspan="2"><h3><img src="https://www.countryflags.io/{point.key}/flat/64.png" width="64" height="64"/>{point.name}</h3></th></tr>' +
+                    '<tr><th colspan="2"><img src="{point.smallImage}" width="120" height="40" /></td></tr>' +
                     '<tr><th>Infected:</th><td  class="text-right">{point.infected}</td></tr>' +
                     '<tr><th>Infected by population:</th><td  class="text-right">{point.infectedByPopulation}</td></tr>' +
                     '<tr><th>Deaths:</th><td  class="text-right">{point.deaths}</td></tr>' +
@@ -66,9 +65,8 @@ var pageObj = {
                     '<tr><th>Mortality Rate:</th><td class="text-right">{point.mortalityRate}</td></tr>' +
                     '<tr><th>Days to duplicate:</th><td class="text-right">{point.duplicationRateStr}</td></tr>' +
                     '<tr><th class="mapbox-info" colspan="2">Click country to show detail</td></tr>'+
-                    '<tr><th class="mapbox-info" colspan="2"></td></tr>'
+                    '</table>'
                 ,
-                footerFormat: '</table>',
                 followPointer: false
             },
             plotOptions: {
@@ -77,7 +75,7 @@ var pageObj = {
                         events: {
                             click: function () {
                                 var text = '<b>Clicked point</b><br>Series: ' + this.series.name +
-                                    '<br>Point: ' + this.name + ' (' + this.value + '/km²)',
+                                    '<br>Point: ' + this.name + ' (' + this.value + '/kmï¿½)',
                                     chart = this.series.chart;
                                 console.log(this.key);
                                 window.location.href="/detail/"+this.key;

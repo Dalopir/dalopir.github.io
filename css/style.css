@@ -17,16 +17,13 @@
     font-size: 11px;
 }
 
-.infinitum::after {
-    content: "∞";
-    display:inline;
-}
-td.infinitum {
-
-}
 .extra-small {
     font-size:10px;
 }
 .infected-small-image {
     border: 1px solid #949ba1 !important;
+}
+
+table.dataTable thead.table-sm th{
+    padding:0.3rem;
 }
