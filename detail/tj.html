@@ -82,7 +82,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected by population</h5>
-                    <p class="card-text color-infected">35</p>
+                    <p class="card-text color-infected">36</p>
                 </div>
             </div>
         </div>
@@ -120,23 +120,29 @@
         </div>
     </div>
 
-    <h2 class="mb-1">Infected by day</h2>
+    <h2 class="mb-1">Infected by day in Tajikistan</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 infected each day in Tajikistan. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-infected" class="mb-3"></div>
 
-    <h2 class="mb-1">Deaths by day</h2>
+    <h2 class="mb-1">Infected (acumulated) in Tajikistan</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Tajikistan.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day in Tajikistan</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 deaths each day in Tajikistan. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-deaths" class="mb-3"></div>
 
-    <h2 class="mb-1">Infected (acumulated)</h2>
+    <h2 class="mb-1">Deaths (acumulated) in Tajikistan</h2>
     <p class="intro mb-4">
-        Absolute number of Coronavirus COVID-19 infected in Tajikistan.
+        Absolute number of Coronavirus COVID-19 deaths in Tajikistan.
     </p>
-    <div id="container-infected-acumulated" class="mb-3"></div>
+    <div id="container-deaths-acumulated" class="mb-3"></div>
 
 </div>
 
@@ -173,12 +179,16 @@
     </script>
     <script src="/js/infected-acumulated.js"></script>
 
+    <script>
+        var seriesDeathsAcumulated = [2,2,3,5,8,12,12,20,20,21,21,23,29,33,36,39,41,41,41,44,44,44,46,46,47];
+    </script>
+    <script src="/js/deaths-acumulated.js"></script>
 
 
 
 <div class="float-right">
     <small>
-        Last updated: 2020-05-27 16:32:34    </small>
+        Last updated: 2020-05-27 18:32:34    </small>
 </div>
 <br>
     </body>

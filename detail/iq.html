@@ -74,7 +74,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected</h5>
-                    <p class="card-text color-infected">4,848</p>
+                    <p class="card-text color-infected">5,135</p>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected by population</h5>
-                    <p class="card-text color-infected">12</p>
+                    <p class="card-text color-infected">13</p>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-death">Deaths</h5>
-                    <p class="card-text color-death">169</p>
+                    <p class="card-text color-death">175</p>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-death">Mortality Rate</h5>
-                    <p class="card-text color-death">3.49</p>
+                    <p class="card-text color-death">3.41</p>
                 </div>
             </div>
         </div>
@@ -114,29 +114,35 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-duplicate">Days to duplicate</h5>
-                    <p class="card-text color-duplicate">22</p>
+                    <p class="card-text color-duplicate">23</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2 class="mb-1">Infected by day</h2>
+    <h2 class="mb-1">Infected by day in Iraq</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 infected each day in Iraq. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-infected" class="mb-3"></div>
 
-    <h2 class="mb-1">Deaths by day</h2>
+    <h2 class="mb-1">Infected (acumulated) in Iraq</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Iraq.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day in Iraq</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 deaths each day in Iraq. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-deaths" class="mb-3"></div>
 
-    <h2 class="mb-1">Infected (acumulated)</h2>
+    <h2 class="mb-1">Deaths (acumulated) in Iraq</h2>
     <p class="intro mb-4">
-        Absolute number of Coronavirus COVID-19 infected in Iraq.
+        Absolute number of Coronavirus COVID-19 deaths in Iraq.
     </p>
-    <div id="container-infected-acumulated" class="mb-3"></div>
+    <div id="container-deaths-acumulated" class="mb-3"></div>
 
 </div>
 
@@ -173,12 +179,16 @@
     </script>
     <script src="/js/infected-acumulated.js"></script>
 
+    <script>
+        var seriesDeathsAcumulated = [2,2,3,4,6,6,7,7,8,9,10,10,10,11,12,13,17,17,20,23,27,29,36,40,42,42,46,50,52,54,54,56,61,64,65,69,69,70,72,76,78,78,79,80,81,82,82,82,83,83,83,86,86,87,88,90,92,93,94,95,97,98,102,102,102,104,107,109,110,112,115,115,117,121,123,127,131,134,140,147,152,160,163,169];
+    </script>
+    <script src="/js/deaths-acumulated.js"></script>
 
 
 
 <div class="float-right">
     <small>
-        Last updated: 2020-05-27 16:32:34    </small>
+        Last updated: 2020-05-27 18:32:34    </small>
 </div>
 <br>
     </body>

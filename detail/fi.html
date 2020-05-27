@@ -82,7 +82,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected by population</h5>
-                    <p class="card-text color-infected">120</p>
+                    <p class="card-text color-infected">121</p>
                 </div>
             </div>
         </div>
@@ -120,23 +120,29 @@
         </div>
     </div>
 
-    <h2 class="mb-1">Infected by day</h2>
+    <h2 class="mb-1">Infected by day in Finland</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 infected each day in Finland. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-infected" class="mb-3"></div>
 
-    <h2 class="mb-1">Deaths by day</h2>
+    <h2 class="mb-1">Infected (acumulated) in Finland</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Finland.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day in Finland</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 deaths each day in Finland. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-deaths" class="mb-3"></div>
 
-    <h2 class="mb-1">Infected (acumulated)</h2>
+    <h2 class="mb-1">Deaths (acumulated) in Finland</h2>
     <p class="intro mb-4">
-        Absolute number of Coronavirus COVID-19 infected in Finland.
+        Absolute number of Coronavirus COVID-19 deaths in Finland.
     </p>
-    <div id="container-infected-acumulated" class="mb-3"></div>
+    <div id="container-deaths-acumulated" class="mb-3"></div>
 
 </div>
 
@@ -173,12 +179,16 @@
     </script>
     <script src="/js/infected-acumulated.js"></script>
 
+    <script>
+        var seriesDeathsAcumulated = [1,1,1,1,3,5,7,9,11,13,17,17,19,20,25,28,27,34,40,42,48,49,56,59,64,72,75,82,90,94,98,141,149,172,177,186,190,193,199,206,211,218,220,230,240,246,252,255,260,265,267,271,275,284,287,293,297,298,300,301,304,306,306,306,307,308,312];
+    </script>
+    <script src="/js/deaths-acumulated.js"></script>
 
 
 
 <div class="float-right">
     <small>
-        Last updated: 2020-05-27 16:32:34    </small>
+        Last updated: 2020-05-27 18:32:34    </small>
 </div>
 <br>
     </body>

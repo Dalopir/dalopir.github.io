@@ -74,7 +74,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected</h5>
-                    <p class="card-text color-infected">158,762</p>
+                    <p class="card-text color-infected">159,797</p>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected by population</h5>
-                    <p class="card-text color-infected">188</p>
+                    <p class="card-text color-infected">189</p>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-death">Deaths</h5>
-                    <p class="card-text color-death">4,397</p>
+                    <p class="card-text color-death">4,431</p>
                 </div>
             </div>
         </div>
@@ -114,29 +114,35 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-duplicate">Days to duplicate</h5>
-                    <p class="card-text color-duplicate">167</p>
+                    <p class="card-text color-duplicate">168</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2 class="mb-1">Infected by day</h2>
+    <h2 class="mb-1">Infected by day in Turkey</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 infected each day in Turkey. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-infected" class="mb-3"></div>
 
-    <h2 class="mb-1">Deaths by day</h2>
+    <h2 class="mb-1">Infected (acumulated) in Turkey</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Turkey.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day in Turkey</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 deaths each day in Turkey. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-deaths" class="mb-3"></div>
 
-    <h2 class="mb-1">Infected (acumulated)</h2>
+    <h2 class="mb-1">Deaths (acumulated) in Turkey</h2>
     <p class="intro mb-4">
-        Absolute number of Coronavirus COVID-19 infected in Turkey.
+        Absolute number of Coronavirus COVID-19 deaths in Turkey.
     </p>
-    <div id="container-infected-acumulated" class="mb-3"></div>
+    <div id="container-deaths-acumulated" class="mb-3"></div>
 
 </div>
 
@@ -155,7 +161,7 @@
 
         var seriesInfected = [29,51,94,167,311,566,293,343,561,1196,2069,1704,1815,1610,2704,2148,2456,2786,3013,3135,3148,3892,4117,4056,4747,5138,4789,4093,4062,4281,4801,4353,3783,3977,4674,4611,3083,3116,3122,2861,2357,2131,2392,2936,2615,2188,1983,1670,1614,1832,2253,1977,1848,1546,1542,1114,1704,1639,1635,1708,1610,1368,1158,1022,972,961,952,1186,1141,987,948];
         var seriesInfectedMovingAverage = [6.7142857142857,13.857142857143,27.285714285714,50.571428571429,95,175.71428571429,215.85714285714,260.71428571429,333.57142857143,491,762.71428571429,961.71428571429,1140.1428571429,1328.2857142857,1665.5714285714,1892.2857142857,2072.2857142857,2174.7142857143,2361.7142857143,2550.2857142857,2770,2939.7142857143,3221,3449.5714285714,3729.7142857143,4033.2857142857,4269.5714285714,4404.5714285714,4428.8571428571,4452.2857142857,4558.7142857143,4502.4285714286,4308.8571428571,4192.8571428571,4275.8571428571,4354.2857142857,4183.1428571429,3942.4285714286,3766.5714285714,3634.8571428571,3403.4285714286,3040.1428571429,2723.1428571429,2702.1428571429,2630.5714285714,2497.1428571429,2371.7142857143,2273.5714285714,2199.7142857143,2119.7142857143,2022.1428571429,1931,1882.4285714286,1820,1801.7142857143,1730.2857142857,1712,1624.2857142857,1575.4285714286,1555.4285714286,1564.5714285714,1539.7142857143,1546,1448.5714285714,1353.2857142857,1257,1149,1088.4285714286,1056,1031.5714285714,1021];
-        var dateSeriesAxis = ["Mar, 17","Mar, 18","Mar, 19","Mar, 20","Mar, 21","Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Apr, 1","Apr, 2","Apr, 3","Apr, 4","Apr, 5","Apr, 6","Apr, 7","Apr, 8","Apr, 9","Apr, 10","Apr, 11","Apr, 12","Apr, 13","Apr, 14","Apr, 15","Apr, 16","Apr, 17","Apr, 18","Apr, 19","Apr, 20","Apr, 21","Apr, 22","Apr, 23","Apr, 24","Apr, 25","Apr, 26","Apr, 27","Apr, 28","Apr, 29","Apr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
+        var dateSeriesAxis = ["Mar, 17","Mar, 18","Mar, 19","Mar, 20","Mar, 21","Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Abr, 1","Abr, 2","Abr, 3","Abr, 4","Abr, 5","Abr, 6","Abr, 7","Abr, 8","Abr, 9","Abr, 10","Abr, 11","Abr, 12","Abr, 13","Abr, 14","Abr, 15","Abr, 16","Abr, 17","Abr, 18","Abr, 19","Abr, 20","Abr, 21","Abr, 22","Abr, 23","Abr, 24","Abr, 25","Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
 
     </script>
     <script src="/js/infected-day.js"></script>
@@ -173,12 +179,16 @@
     </script>
     <script src="/js/infected-acumulated.js"></script>
 
+    <script>
+        var seriesDeathsAcumulated = [1,1,3,4,9,30,37,44,59,75,92,108,131,168,214,277,356,425,501,574,649,725,812,908,1006,1101,1198,1296,1403,1518,1643,1769,1890,2017,2140,2259,2376,2491,2600,2706,2805,2900,2992,3081,3174,3258,3336,3397,3461,3520,3584,3641,3689,3739,3786,3841,3894,3952,4007,4055,4096,4140,4171,4199,4222,4249,4276,4308,4340,4369,4397];
+    </script>
+    <script src="/js/deaths-acumulated.js"></script>
 
 
 
 <div class="float-right">
     <small>
-        Last updated: 2020-05-27 16:32:34    </small>
+        Last updated: 2020-05-27 18:32:34    </small>
 </div>
 <br>
     </body>

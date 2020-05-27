@@ -74,7 +74,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected</h5>
-                    <p class="card-text color-infected">16,771</p>
+                    <p class="card-text color-infected">16,793</p>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected by population</h5>
-                    <p class="card-text color-infected">193</p>
+                    <p class="card-text color-infected">194</p>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-death">Mortality Rate</h5>
-                    <p class="card-text color-death">1.68</p>
+                    <p class="card-text color-death">1.67</p>
                 </div>
             </div>
         </div>
@@ -114,29 +114,35 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-duplicate">Days to duplicate</h5>
-                    <p class="card-text color-duplicate">729</p>
+                    <p class="card-text color-duplicate">730</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2 class="mb-1">Infected by day</h2>
+    <h2 class="mb-1">Infected by day in Israel</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 infected each day in Israel. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-infected" class="mb-3"></div>
 
-    <h2 class="mb-1">Deaths by day</h2>
+    <h2 class="mb-1">Infected (acumulated) in Israel</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Israel.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day in Israel</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 deaths each day in Israel. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-deaths" class="mb-3"></div>
 
-    <h2 class="mb-1">Infected (acumulated)</h2>
+    <h2 class="mb-1">Deaths (acumulated) in Israel</h2>
     <p class="intro mb-4">
-        Absolute number of Coronavirus COVID-19 infected in Israel.
+        Absolute number of Coronavirus COVID-19 deaths in Israel.
     </p>
-    <div id="container-infected-acumulated" class="mb-3"></div>
+    <div id="container-deaths-acumulated" class="mb-3"></div>
 
 </div>
 
@@ -155,7 +161,7 @@
 
         var seriesInfected = [183,171,188,167,1131,324,342,584,628,448,663,734,765,571,423,579,474,344,156,564,440,335,402,441,460,455,257,224,283,226,222,229,556,305,255,240,145,112,173,106,112,155,84,23,38,43,21,71,55,18,23,29,23,19,31,10,19,9,26,16,8,16,7,22,5,17,23];
         var seriesInfectedMovingAverage = [79.571428571429,95.714285714286,121.85714285714,141.14285714286,295,323.71428571429,358,415.28571428571,480.57142857143,517.71428571429,588.57142857143,531.85714285714,594.85714285714,627.57142857143,604.57142857143,597.57142857143,601.28571428571,555.71428571429,473.14285714286,444.42857142857,425.71428571429,413.14285714286,387.85714285714,383.14285714286,399.71428571429,442.42857142857,398.57142857143,367.71428571429,360.28571428571,335.14285714286,303.85714285714,270.85714285714,285.28571428571,292.14285714286,296.57142857143,290.42857142857,278.85714285714,263.14285714286,255.14285714286,190.85714285714,163.28571428571,149,126.71428571429,109.28571428571,98.714285714286,80.142857142857,68,62.142857142857,47.857142857143,38.428571428571,38.428571428571,37.142857142857,34.285714285714,34,28.285714285714,21.857142857143,22,20,19.571428571429,18.571428571429,17,14.857142857143,14.428571428571,14.857142857143,14.285714285714,13,14];
-        var dateSeriesAxis = ["Mar, 21","Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Apr, 1","Apr, 2","Apr, 3","Apr, 4","Apr, 5","Apr, 6","Apr, 7","Apr, 8","Apr, 9","Apr, 10","Apr, 11","Apr, 12","Apr, 13","Apr, 14","Apr, 15","Apr, 16","Apr, 17","Apr, 18","Apr, 19","Apr, 20","Apr, 21","Apr, 22","Apr, 23","Apr, 24","Apr, 25","Apr, 26","Apr, 27","Apr, 28","Apr, 29","Apr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
+        var dateSeriesAxis = ["Mar, 21","Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Abr, 1","Abr, 2","Abr, 3","Abr, 4","Abr, 5","Abr, 6","Abr, 7","Abr, 8","Abr, 9","Abr, 10","Abr, 11","Abr, 12","Abr, 13","Abr, 14","Abr, 15","Abr, 16","Abr, 17","Abr, 18","Abr, 19","Abr, 20","Abr, 21","Abr, 22","Abr, 23","Abr, 24","Abr, 25","Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
 
     </script>
     <script src="/js/infected-day.js"></script>
@@ -173,12 +179,16 @@
     </script>
     <script src="/js/infected-acumulated.js"></script>
 
+    <script>
+        var seriesDeathsAcumulated = [1,1,1,3,5,8,12,12,15,16,20,26,36,40,44,49,57,65,73,86,95,101,103,116,123,130,142,151,164,172,177,184,189,192,194,199,201,204,210,215,222,225,229,232,235,238,239,240,245,247,252,258,260,264,265,266,268,272,276,278,279,279,279,279,279,281,281];
+    </script>
+    <script src="/js/deaths-acumulated.js"></script>
 
 
 
 <div class="float-right">
     <small>
-        Last updated: 2020-05-27 16:32:34    </small>
+        Last updated: 2020-05-27 18:32:34    </small>
 </div>
 <br>
     </body>

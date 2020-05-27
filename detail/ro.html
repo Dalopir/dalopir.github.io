@@ -82,7 +82,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected by population</h5>
-                    <p class="card-text color-infected">96</p>
+                    <p class="card-text color-infected">97</p>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-death">Deaths</h5>
-                    <p class="card-text color-death">1,223</p>
+                    <p class="card-text color-death">1,227</p>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-death">Mortality Rate</h5>
-                    <p class="card-text color-death">6.58</p>
+                    <p class="card-text color-death">6.6</p>
                 </div>
             </div>
         </div>
@@ -120,23 +120,29 @@
         </div>
     </div>
 
-    <h2 class="mb-1">Infected by day</h2>
+    <h2 class="mb-1">Infected by day in Romania</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 infected each day in Romania. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-infected" class="mb-3"></div>
 
-    <h2 class="mb-1">Deaths by day</h2>
+    <h2 class="mb-1">Infected (acumulated) in Romania</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Romania.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day in Romania</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 deaths each day in Romania. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-deaths" class="mb-3"></div>
 
-    <h2 class="mb-1">Infected (acumulated)</h2>
+    <h2 class="mb-1">Deaths (acumulated) in Romania</h2>
     <p class="intro mb-4">
-        Absolute number of Coronavirus COVID-19 infected in Romania.
+        Absolute number of Coronavirus COVID-19 deaths in Romania.
     </p>
-    <div id="container-infected-acumulated" class="mb-3"></div>
+    <div id="container-deaths-acumulated" class="mb-3"></div>
 
 </div>
 
@@ -155,7 +161,7 @@
 
         var seriesInfected = [66,143,218,112,123,263,160,363,294,136,215,278,445,430,251,193,360,344,441,265,523,310,333,246,337,491,360,351,328,190,306,468,386,321,218,401,303,277,362,262,327,165,431,349,325,270,392,312,320,231,226,190,224,245,190,267,167,165,155,196,198,127,145,213,213,146];
         var seriesInfectedMovingAverage = [43.142857142857,59.714285714286,87.142857142857,92.285714285714,107.42857142857,140.57142857143,155,197.42857142857,219,207.28571428571,222,244.14285714286,270.14285714286,308.71428571429,292.71428571429,278.28571428571,310.28571428571,328.71428571429,352,326.28571428571,339.57142857143,348,368,351.71428571429,350.71428571429,357.85714285714,371.42857142857,346.85714285714,349.42857142857,329,337.57142857143,356.28571428571,341.28571428571,335.71428571429,316.71428571429,327.14285714286,343.28571428571,339.14285714286,324,306.28571428571,307.14285714286,299.57142857143,303.85714285714,310.42857142857,317.28571428571,304.14285714286,322.71428571429,320.57142857143,342.71428571429,314.14285714286,296.57142857143,277.28571428571,270.71428571429,249.71428571429,232.28571428571,224.71428571429,215.57142857143,206.85714285714,201.85714285714,197.85714285714,191.14285714286,182.14285714286,164.71428571429,171.28571428571,178.14285714286,176.85714285714];
-        var dateSeriesAxis = ["Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Apr, 1","Apr, 2","Apr, 3","Apr, 4","Apr, 5","Apr, 6","Apr, 7","Apr, 8","Apr, 9","Apr, 10","Apr, 11","Apr, 12","Apr, 13","Apr, 14","Apr, 15","Apr, 16","Apr, 17","Apr, 18","Apr, 19","Apr, 20","Apr, 21","Apr, 22","Apr, 23","Apr, 24","Apr, 25","Apr, 26","Apr, 27","Apr, 28","Apr, 29","Apr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
+        var dateSeriesAxis = ["Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Abr, 1","Abr, 2","Abr, 3","Abr, 4","Abr, 5","Abr, 6","Abr, 7","Abr, 8","Abr, 9","Abr, 10","Abr, 11","Abr, 12","Abr, 13","Abr, 14","Abr, 15","Abr, 16","Abr, 17","Abr, 18","Abr, 19","Abr, 20","Abr, 21","Abr, 22","Abr, 23","Abr, 24","Abr, 25","Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
 
     </script>
     <script src="/js/infected-day.js"></script>
@@ -173,12 +179,16 @@
     </script>
     <script src="/js/infected-acumulated.js"></script>
 
+    <script>
+        var seriesDeathsAcumulated = [3,7,11,17,23,26,37,43,65,82,92,115,133,146,151,176,197,220,248,270,291,316,331,351,372,392,411,421,451,478,498,524,545,567,601,619,641,663,693,717,744,771,790,818,841,864,888,923,939,961,982,1002,1036,1053,1070,1094,1107,1120,1137,1147,1156,1166,1176,1185,1205,1216];
+    </script>
+    <script src="/js/deaths-acumulated.js"></script>
 
 
 
 <div class="float-right">
     <small>
-        Last updated: 2020-05-27 16:32:34    </small>
+        Last updated: 2020-05-27 18:32:34    </small>
 </div>
 <br>
     </body>

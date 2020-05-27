@@ -17,34 +17,24 @@ var pageDeathsObj = {
             colors: [me.colorBars, me.colorLine],
         };
         Highcharts.setOptions(HighchartsVsfTheme);
-
-        Highcharts.chart('container-deaths', {
-            chart: {
-                zoomType: 'xy',
-                height: me.charHeight,
+        var yAxis =[{
+            labels: {
+                format: '{value}',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
             },
-            title: null,
-            subtitle: null,
-            xAxis: [{
-                categories: dateSeriesAxis,
-                crosshair: true
-            }],
-            yAxis: [{
-                    labels: {
-                        format: '{value}',
-                        style: {
-                            color: Highcharts.getOptions().colors[1]
-                        }
-                    },
-                    title: {
-                        text: 'Deaths by day',
-                        style: {
-                            color: Highcharts.getOptions().colors[1]
-                        }
-                    },
-                    min:Math.min( 0, me.getMinOfArray(seriesDeathMovingAverage) ),
-                    max:Math.max( me.getMaxOfArray(seriesDeath), me.getMaxOfArray(seriesDeathMovingAverage) ),
-                },
+            title: {
+                text: 'Deaths by day',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+            min:Math.min( 0, me.getMinOfArray(seriesDeathMovingAverage) ),
+            max:Math.max( me.getMaxOfArray(seriesDeath), me.getMaxOfArray(seriesDeathMovingAverage) ),
+        }];
+        if (!mobileCheck()) {
+            yAxis.push(
                 {
                     labels: {
                         format: '{value}',
@@ -61,7 +51,21 @@ var pageDeathsObj = {
                     min:0,
                     max:Math.max( me.getMaxOfArray(seriesDeath), me.getMaxOfArray(seriesDeathMovingAverage) ),
                     opposite: true
-                }],
+                }
+            )
+        }
+        Highcharts.chart('container-deaths', {
+            chart: {
+                zoomType: 'xy',
+                height: me.charHeight,
+            },
+            title: null,
+            subtitle: null,
+            xAxis: [{
+                categories: dateSeriesAxis,
+                crosshair: true
+            }],
+            yAxis: yAxis,
             tooltip: {
                 shared: true
             },

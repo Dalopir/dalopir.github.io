@@ -82,7 +82,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected by population</h5>
-                    <p class="card-text color-infected">21</p>
+                    <p class="card-text color-infected">22</p>
                 </div>
             </div>
         </div>
@@ -120,23 +120,29 @@
         </div>
     </div>
 
-    <h2 class="mb-1">Infected by day</h2>
+    <h2 class="mb-1">Infected by day in Korea (Republic of)</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 infected each day in Korea (Republic of). Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-infected" class="mb-3"></div>
 
-    <h2 class="mb-1">Deaths by day</h2>
+    <h2 class="mb-1">Infected (acumulated) in Korea (Republic of)</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Korea (Republic of).
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day in Korea (Republic of)</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 deaths each day in Korea (Republic of). Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-deaths" class="mb-3"></div>
 
-    <h2 class="mb-1">Infected (acumulated)</h2>
+    <h2 class="mb-1">Deaths (acumulated) in Korea (Republic of)</h2>
     <p class="intro mb-4">
-        Absolute number of Coronavirus COVID-19 infected in Korea (Republic of).
+        Absolute number of Coronavirus COVID-19 deaths in Korea (Republic of).
     </p>
-    <div id="container-infected-acumulated" class="mb-3"></div>
+    <div id="container-deaths-acumulated" class="mb-3"></div>
 
 </div>
 
@@ -173,12 +179,16 @@
     </script>
     <script src="/js/infected-acumulated.js"></script>
 
+    <script>
+        var seriesDeathsAcumulated = [1,2,2,6,8,10,12,13,13,16,17,28,28,35,35,42,44,50,53,54,60,66,66,72,75,75,81,84,91,94,102,111,111,120,126,131,139,144,152,158,162,165,169,174,177,183,186,192,200,204,208,211,214,217,222,225,229,230,232,234,236,237,238,240,240,242,243,244,246,247,248,250,250,252,254,255,256,256,256,256,256,258,259,260,260,262,262,263,263,263,264,264,266,266,267,269,269];
+    </script>
+    <script src="/js/deaths-acumulated.js"></script>
 
 
 
 <div class="float-right">
     <small>
-        Last updated: 2020-05-27 16:32:34    </small>
+        Last updated: 2020-05-27 18:32:34    </small>
 </div>
 <br>
     </body>

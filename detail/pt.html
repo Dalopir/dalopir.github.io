@@ -82,7 +82,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title color-infected">Infected by population</h5>
-                    <p class="card-text color-infected">306</p>
+                    <p class="card-text color-infected">307</p>
                 </div>
             </div>
         </div>
@@ -120,23 +120,29 @@
         </div>
     </div>
 
-    <h2 class="mb-1">Infected by day</h2>
+    <h2 class="mb-1">Infected by day in Portugal</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 infected each day in Portugal. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-infected" class="mb-3"></div>
 
-    <h2 class="mb-1">Deaths by day</h2>
+    <h2 class="mb-1">Infected (acumulated) in Portugal</h2>
+    <p class="intro mb-4">
+        Absolute number of Coronavirus COVID-19 infected in Portugal.
+    </p>
+    <div id="container-infected-acumulated" class="mb-3"></div>
+
+    <h2 class="mb-1">Deaths by day in Portugal</h2>
     <p class="intro mb-4">
         Number of Coronavirus COVID-19 deaths each day in Portugal. Also the moving average of 7 days is included to reduce errors in the taken data.
     </p>
     <div id="container-deaths" class="mb-3"></div>
 
-    <h2 class="mb-1">Infected (acumulated)</h2>
+    <h2 class="mb-1">Deaths (acumulated) in Portugal</h2>
     <p class="intro mb-4">
-        Absolute number of Coronavirus COVID-19 infected in Portugal.
+        Absolute number of Coronavirus COVID-19 deaths in Portugal.
     </p>
-    <div id="container-infected-acumulated" class="mb-3"></div>
+    <div id="container-deaths-acumulated" class="mb-3"></div>
 
 </div>
 
@@ -155,7 +161,7 @@
 
         var seriesInfected = [117,0,337,235,260,320,460,302,633,549,724,902,792,446,1035,808,783,852,638,754,452,712,699,815,1516,515,598,349,514,643,750,181,663,521,657,516,603,371,444,595,472,163,295,183,540,306,0,92,242,178,480,533,553,138,175,98,234,219,187,264,227,226,173,223,228,252,288,271,152,165,219];
         var seriesInfectedMovingAverage = [58.142857142857,55.571428571429,103.71428571429,129.71428571429,158.71428571429,193.57142857143,247,273.42857142857,363.85714285714,394.14285714286,464,555.71428571429,623.14285714286,621.14285714286,725.85714285714,750.85714285714,784.28571428571,802.57142857143,764.85714285714,759.42857142857,760.28571428571,714.14285714286,698.57142857143,703.14285714286,798,780.42857142857,758.14285714286,743.42857142857,715.14285714286,707.14285714286,697.85714285714,507.14285714286,528.28571428571,517.28571428571,561.28571428571,561.57142857143,555.85714285714,501.71428571429,539.28571428571,529.57142857143,522.57142857143,452,420.42857142857,360.42857142857,384.57142857143,364.85714285714,256.85714285714,202.57142857143,213.85714285714,197.14285714286,239.57142857143,238.57142857143,273.85714285714,316.57142857143,328.42857142857,307.85714285714,315.85714285714,278.57142857143,229.14285714286,187.85714285714,200.57142857143,207.85714285714,218.57142857143,217,218.28571428571,227.57142857143,231,237.28571428571,226.71428571429,225.57142857143,225];
-        var dateSeriesAxis = ["Mar, 17","Mar, 18","Mar, 19","Mar, 20","Mar, 21","Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Apr, 1","Apr, 2","Apr, 3","Apr, 4","Apr, 5","Apr, 6","Apr, 7","Apr, 8","Apr, 9","Apr, 10","Apr, 11","Apr, 12","Apr, 13","Apr, 14","Apr, 15","Apr, 16","Apr, 17","Apr, 18","Apr, 19","Apr, 20","Apr, 21","Apr, 22","Apr, 23","Apr, 24","Apr, 25","Apr, 26","Apr, 27","Apr, 28","Apr, 29","Apr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
+        var dateSeriesAxis = ["Mar, 17","Mar, 18","Mar, 19","Mar, 20","Mar, 21","Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Abr, 1","Abr, 2","Abr, 3","Abr, 4","Abr, 5","Abr, 6","Abr, 7","Abr, 8","Abr, 9","Abr, 10","Abr, 11","Abr, 12","Abr, 13","Abr, 14","Abr, 15","Abr, 16","Abr, 17","Abr, 18","Abr, 19","Abr, 20","Abr, 21","Abr, 22","Abr, 23","Abr, 24","Abr, 25","Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
 
     </script>
     <script src="/js/infected-day.js"></script>
@@ -173,12 +179,16 @@
     </script>
     <script src="/js/infected-acumulated.js"></script>
 
+    <script>
+        var seriesDeathsAcumulated = [1,2,3,6,12,14,23,33,43,60,76,100,119,140,160,187,209,246,266,295,311,345,380,409,435,470,504,535,567,599,629,657,687,714,735,762,785,820,854,880,903,928,948,973,989,1007,1023,1043,1063,1074,1089,1105,1114,1126,1135,1144,1163,1175,1184,1190,1203,1218,1231,1247,1263,1277,1289,1302,1316,1330,1342];
+    </script>
+    <script src="/js/deaths-acumulated.js"></script>
 
 
 
 <div class="float-right">
     <small>
-        Last updated: 2020-05-27 16:32:34    </small>
+        Last updated: 2020-05-27 18:32:34    </small>
 </div>
 <br>
     </body>

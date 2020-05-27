@@ -43,3 +43,23 @@ table.dataTable thead.table-sm th{
 .color-actives {
     color: #cd702b;
 }
+.border-right-row {
+    border-right: 2px solid #d2dee7;
+}
+table.dataTable tbody th,
+table.dataTable tbody td {
+    padding: 3px 6px!important;
+}
+
+.map-number {
+    font-size:18px;
+    font-weight: bold;
+}
+.dashmap {
+    background-color: #ffffff;
+}
+.dashmap td,
+.dashmap th
+{
+    padding: 4px 5px;
+}
