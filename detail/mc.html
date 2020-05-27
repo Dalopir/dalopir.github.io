@@ -73,48 +73,48 @@
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Infected</h5>
-                    <p class="card-text">98</p>
+                    <h5 class="card-title color-infected">Infected</h5>
+                    <p class="card-text color-infected">98</p>
                 </div>
             </div>
         </div>
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Infected by population</h5>
-                    <p class="card-text">249</p>
+                    <h5 class="card-title color-infected">Infected by population</h5>
+                    <p class="card-text color-infected">249</p>
                 </div>
             </div>
         </div>
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Deaths</h5>
-                    <p class="card-text">4</p>
+                    <h5 class="card-title color-death">Deaths</h5>
+                    <p class="card-text color-death">4</p>
                 </div>
             </div>
         </div>
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Deaths by population</h5>
-                    <p class="card-text">10</p>
+                    <h5 class="card-title color-death">Deaths by population</h5>
+                    <p class="card-text color-death">10</p>
                 </div>
             </div>
         </div>
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Mortality Rate</h5>
-                    <p class="card-text">4.08</p>
+                    <h5 class="card-title color-death">Mortality Rate</h5>
+                    <p class="card-text color-death">4.08</p>
                 </div>
             </div>
         </div>
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Days to duplicate</h5>
-                    <p class="card-text">0</p>
+                    <h5 class="card-title color-duplicate">Days to duplicate</h5>
+                    <p class="card-text color-duplicate">0</p>
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@
 
         var seriesInfected = [4,3,3,3,5,4,2,7,4,2,2,3,6,2,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0];
         var seriesInfectedMovingAverage = [3.2857142857143,3.7142857142857,4.1428571428571,3.4285714285714,3.8571428571429,3.1428571428571,3.4285714285714,3.8571428571429,4,3.8571428571429,3.7142857142857,3.4285714285714,3.7142857142857,3.7142857142857,2.8571428571429,2.2857142857143,2,1.7142857142857,1.2857142857143,0.57142857142857,0.28571428571429,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0,0,0,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0,0,0,0,0,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0,0,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.14285714285714,0.28571428571429,0.28571428571429,0.14285714285714,0.14285714285714];
-        var dateSeriesAxis = ["Mar, 29","Mar, 30","Mar, 31","Apr, 1","Apr, 2","Apr, 3","Apr, 4","Apr, 5","Apr, 6","Apr, 7","Apr, 8","Apr, 9","Apr, 10","Apr, 11","Apr, 12","Apr, 13","Apr, 14","Apr, 15","Apr, 16","Apr, 17","Apr, 18","Apr, 19","Apr, 20","Apr, 21","Apr, 22","Apr, 23","Apr, 24","Apr, 25","Apr, 26","Apr, 27","Apr, 28","Apr, 29","Apr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
+        var dateSeriesAxis = ["Mar, 29","Mar, 30","Mar, 31","Abr, 1","Abr, 2","Abr, 3","Abr, 4","Abr, 5","Abr, 6","Abr, 7","Abr, 8","Abr, 9","Abr, 10","Abr, 11","Abr, 12","Abr, 13","Abr, 14","Abr, 15","Abr, 16","Abr, 17","Abr, 18","Abr, 19","Abr, 20","Abr, 21","Abr, 22","Abr, 23","Abr, 24","Abr, 25","Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
 
     </script>
     <script src="/js/infected-day.js"></script>
@@ -178,7 +178,7 @@
 
 <div class="float-right">
     <small>
-        Last updated: 2020-05-27 08:32:27    </small>
+        Last updated: 2020-05-27 16:32:34    </small>
 </div>
 <br>
     </body>

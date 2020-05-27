@@ -2,14 +2,22 @@
 // Data is joined to map using value of 'hc-key' property by default.
 // See API docs for 'joinBy' for more info on linking data and map.
 var pageInfectedObj = {
+    charHeight: mobileCheck()?280:360,
+    colorBars: '#ff7e11',
+    colorLine: '#000000',
     getMaxOfArray: function (numArray) {
         return Math.max.apply(null, numArray);
     },
     init: function() {
         var me=this;
+        var HighchartsVsfTheme = {
+            colors: [me.colorBars, me.colorLine],
+        };
+        Highcharts.setOptions(HighchartsVsfTheme);
         Highcharts.chart('container-infected-acumulated', {
             chart: {
                 zoomType: 'xy',
+                height: me.charHeight,
             },
             title: null,
             subtitle: null,

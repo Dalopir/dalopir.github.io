@@ -73,48 +73,48 @@
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Infected</h5>
-                    <p class="card-text">7,139</p>
+                    <h5 class="card-title color-infected">Infected</h5>
+                    <p class="card-text color-infected">7,139</p>
                 </div>
             </div>
         </div>
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Infected by population</h5>
-                    <p class="card-text">28</p>
+                    <h5 class="card-title color-infected">Infected by population</h5>
+                    <p class="card-text color-infected">28</p>
                 </div>
             </div>
         </div>
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Deaths</h5>
-                    <p class="card-text">103</p>
+                    <h5 class="card-title color-death">Deaths</h5>
+                    <p class="card-text color-death">103</p>
                 </div>
             </div>
         </div>
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Deaths by population</h5>
-                    <p class="card-text">0</p>
+                    <h5 class="card-title color-death">Deaths by population</h5>
+                    <p class="card-text color-death">0</p>
                 </div>
             </div>
         </div>
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Mortality Rate</h5>
-                    <p class="card-text">1.44</p>
+                    <h5 class="card-title color-death">Mortality Rate</h5>
+                    <p class="card-text color-death">1.44</p>
                 </div>
             </div>
         </div>
         <div class="col-4 col-lg-2">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Days to duplicate</h5>
-                    <p class="card-text">549</p>
+                    <h5 class="card-title color-duplicate">Days to duplicate</h5>
+                    <p class="card-text color-duplicate">549</p>
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@
 
         var seriesInfected = [2,3,9,13,3,5,3,13,15,16,21,0,72,50,47,80,75,116,113,110,280,478,133,362,320,446,333,497,344,377,198,303,254,214,220,137,110,98,115,98,107,88,12,36,64,25,22,60,46,42,13,22,7,10,15,17,20,7,23,8,14,12,21,23,25,28,19,19,5,21,9,22,10,9,30,16,9,10,14,4,9,14,4,15,0,12,13];
         var seriesInfectedMovingAverage = [1.7142857142857,2.1428571428571,3.4285714285714,5.2857142857143,5.7142857142857,6.4285714285714,5.4285714285714,7,8.7142857142857,9.7142857142857,10.857142857143,10.428571428571,20,26.714285714286,31.571428571429,40.857142857143,49.285714285714,62.857142857143,79,84.428571428571,117.28571428571,178.85714285714,186.42857142857,227.42857142857,256.57142857143,304.14285714286,336,367,347.85714285714,382.71428571429,359.28571428571,356.85714285714,329.42857142857,312.42857142857,272.85714285714,243.28571428571,205.14285714286,190.85714285714,164,141.71428571429,126.42857142857,107.57142857143,89.714285714286,79.142857142857,74.285714285714,61.428571428571,50.571428571429,43.857142857143,37.857142857143,42.142857142857,38.857142857143,32.857142857143,30.285714285714,28.571428571429,22.142857142857,18,14.857142857143,14,14.142857142857,14.285714285714,14.857142857143,14.428571428571,15,15.428571428571,18,18.714285714286,20.285714285714,21,20,20,18,17.571428571429,15,13.571428571429,15.142857142857,16.714285714286,15,15.142857142857,14,13.142857142857,13.142857142857,10.857142857143,9.1428571428571,10,8.5714285714286,8.2857142857143,9.5714285714286];
-        var dateSeriesAxis = ["Mar, 1","Mar, 2","Mar, 3","Mar, 4","Mar, 5","Mar, 6","Mar, 7","Mar, 8","Mar, 9","Mar, 10","Mar, 11","Mar, 12","Mar, 13","Mar, 14","Mar, 15","Mar, 16","Mar, 17","Mar, 18","Mar, 19","Mar, 20","Mar, 21","Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Apr, 1","Apr, 2","Apr, 3","Apr, 4","Apr, 5","Apr, 6","Apr, 7","Apr, 8","Apr, 9","Apr, 10","Apr, 11","Apr, 12","Apr, 13","Apr, 14","Apr, 15","Apr, 16","Apr, 17","Apr, 18","Apr, 19","Apr, 20","Apr, 21","Apr, 22","Apr, 23","Apr, 24","Apr, 25","Apr, 26","Apr, 27","Apr, 28","Apr, 29","Apr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
+        var dateSeriesAxis = ["Mar, 1","Mar, 2","Mar, 3","Mar, 4","Mar, 5","Mar, 6","Mar, 7","Mar, 8","Mar, 9","Mar, 10","Mar, 11","Mar, 12","Mar, 13","Mar, 14","Mar, 15","Mar, 16","Mar, 17","Mar, 18","Mar, 19","Mar, 20","Mar, 21","Mar, 22","Mar, 23","Mar, 24","Mar, 25","Mar, 26","Mar, 27","Mar, 28","Mar, 29","Mar, 30","Mar, 31","Abr, 1","Abr, 2","Abr, 3","Abr, 4","Abr, 5","Abr, 6","Abr, 7","Abr, 8","Abr, 9","Abr, 10","Abr, 11","Abr, 12","Abr, 13","Abr, 14","Abr, 15","Abr, 16","Abr, 17","Abr, 18","Abr, 19","Abr, 20","Abr, 21","Abr, 22","Abr, 23","Abr, 24","Abr, 25","Abr, 26","Abr, 27","Abr, 28","Abr, 29","Abr, 30","May, 1","May, 2","May, 3","May, 4","May, 5","May, 6","May, 7","May, 8","May, 9","May, 10","May, 11","May, 12","May, 13","May, 14","May, 15","May, 16","May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26"];
 
     </script>
     <script src="/js/infected-day.js"></script>
@@ -178,7 +178,7 @@
 
 <div class="float-right">
     <small>
-        Last updated: 2020-05-27 08:32:27    </small>
+        Last updated: 2020-05-27 16:32:34    </small>
 </div>
 <br>
     </body>

@@ -2,14 +2,26 @@
 // Data is joined to map using value of 'hc-key' property by default.
 // See API docs for 'joinBy' for more info on linking data and map.
 var pageDeathsObj = {
+    charHeight: mobileCheck()?280:360,
+    colorBars: '#c11a1c',
+    colorLine: '#000000',
     getMaxOfArray: function (numArray) {
         return Math.max.apply(null, numArray);
     },
+    getMinOfArray: function (numArray) {
+        return Math.min.apply(null, numArray);
+    },
     init: function() {
         var me=this;
+        var HighchartsVsfTheme = {
+            colors: [me.colorBars, me.colorLine],
+        };
+        Highcharts.setOptions(HighchartsVsfTheme);
+
         Highcharts.chart('container-deaths', {
             chart: {
-                zoomType: 'xy'
+                zoomType: 'xy',
+                height: me.charHeight,
             },
             title: null,
             subtitle: null,
@@ -30,7 +42,7 @@ var pageDeathsObj = {
                             color: Highcharts.getOptions().colors[1]
                         }
                     },
-                    min:0,
+                    min:Math.min( 0, me.getMinOfArray(seriesDeathMovingAverage) ),
                     max:Math.max( me.getMaxOfArray(seriesDeath), me.getMaxOfArray(seriesDeathMovingAverage) ),
                 },
                 {

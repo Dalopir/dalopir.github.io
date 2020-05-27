@@ -27,3 +27,19 @@
 table.dataTable thead.table-sm th{
     padding:0.3rem;
 }
+
+.color-death {
+    color: #851112;
+}
+.color-infected {
+    color: #cd702b;
+}
+.color-duplicate {
+    color: #021476;
+}
+.color-recovered {
+    color: #034612;
+}
+.color-actives {
+    color: #cd702b;
+}
