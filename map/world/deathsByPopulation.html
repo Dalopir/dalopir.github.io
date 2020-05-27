@@ -112,12 +112,13 @@
 </div>
 
 
-<div id="map-point-html" style="display:none">
+<script id="map-point-html" type="text/template" style="display:none">
     <table class="dashmap">
         <tr>
             <th colspan="4">
                 <h3>
-                    <img src="https://www.countryflags.io/{point.key}/flat/64.png" width="64" height="64"/>{point.name}
+                    <img src="https://www.countryflags.io/{point.key}/flat/64.png" width="64" height="64"/>
+                    {point.name}
                 </h3>
             </th>
         </tr>
@@ -149,7 +150,7 @@
             <th class="mapbox-info" colspan="4">Click country to show detail</th>
         </tr>
         </table>
-</div>
+</script>
 
 
 <script src="/js/jquery-3.5.1.js"></script>
