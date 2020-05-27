@@ -57,7 +57,7 @@ var pageObj = {
             tooltip: {
                 useHTML: true,
                 headerFormat: '',
-                pointFormat: $("#map-point-html").html().replace('imgReplace','img'),
+                pointFormat: $("#map-point-html").html(),
                 followPointer: false
             },
             plotOptions: {

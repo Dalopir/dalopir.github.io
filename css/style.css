@@ -9,6 +9,10 @@
     color: gray;
 }
 
+header{
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .navbar-brand img{
     max-width: 60px;
 }
@@ -62,4 +66,43 @@ table.dataTable tbody td {
 .dashmap th
 {
     padding: 4px 5px;
+}
+
+.card-kpi .card-icon{
+    /*float:left;*/
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 5px 0 0;
+    display:none;
+}
+.card-kpi .card-icon .fa-user{
+    font-size: 15px;
+}
+.card-kpi .card-text{
+
+}
+.card-kpi .card-text span{
+    font-size: 1.5rem;
+    line-height: 60px;
+    display: block;
+}
+
+@media (max-width: 767.98px) {
+   .card-kpi .card-icon{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .card-kpi .card-icon .fa-user{
+        font-size: 10px;
+    }
+    .card-kpi .card-text span{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
 }

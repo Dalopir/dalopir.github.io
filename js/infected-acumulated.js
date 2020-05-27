@@ -48,9 +48,9 @@ var pageInfectedObj = {
             legend: {
                 layout: 'vertical',
                 align: 'left',
-                x: 120,
+                x: 10,
+                y: 20,
                 verticalAlign: 'top',
-                y: 100,
                 floating: true,
                 backgroundColor:
                     Highcharts.defaultOptions.legend.backgroundColor || // theme

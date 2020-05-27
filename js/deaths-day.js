@@ -72,9 +72,9 @@ var pageDeathsObj = {
             legend: {
                 layout: 'vertical',
                 align: 'left',
-                x: 120,
+                x: 80,
+                y: 20,
                 verticalAlign: 'top',
-                y: 100,
                 floating: true,
                 backgroundColor:
                     Highcharts.defaultOptions.legend.backgroundColor || // theme

@@ -23,7 +23,7 @@ var pageInfectedObj = {
                 }
             },
             title: {
-                text: 'Reported cases',
+                text: 'Infected',
                 style: {
                     color: Highcharts.getOptions().colors[1]
                 }
@@ -35,7 +35,7 @@ var pageInfectedObj = {
             yAxis.push(
                 { // Secondary yAxis
                     title: {
-                        text: 'Reported cases',
+                        text: 'Infected',
                         style: {
                             color: Highcharts.getOptions().colors[1]
                         }
@@ -70,16 +70,16 @@ var pageInfectedObj = {
             legend: {
                 layout: 'vertical',
                 align: 'left',
-                x: 120,
+                x: 80,
+                y: 20,
                 verticalAlign: 'top',
-                y: 100,
                 floating: true,
                 backgroundColor:
                     Highcharts.defaultOptions.legend.backgroundColor || // theme
                     'rgba(255,255,255,0.25)'
             },
             series: [{
-                name: 'Reported cases',
+                name: 'Infected',
                 type: 'column',
                 yAxis: 0,
                 data: seriesInfected,
