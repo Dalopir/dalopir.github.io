@@ -69,7 +69,7 @@ var pageObj = {
                                     '<br>Point: ' + this.name + ' (' + this.value + '/km�)',
                                     chart = this.series.chart;
                                 console.log(this.key);
-                                window.location.href="/detail/"+this.key;
+                                window.location.href="/detail/"+this.key+".html";
                             }
                         }
                     }
