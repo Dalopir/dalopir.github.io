@@ -54,7 +54,7 @@
   </div>
 
   <div class="ml-md-auto">
-    <i class="far fa-clock"></i> Last updated: 2020-06-04 20:33:14  </div>
+    <i class="far fa-clock"></i> Last updated: 2020-06-07 07:33:25  </div>
 
 </header>
 
@@ -78,7 +78,7 @@
                 <div class="card-body">
                     <div class="card-icon bg-light"><i class="fas fa-virus color-infected"></i></div>
                     <div class="card-text">
-                        <span class="color-infected">957</span>
+                        <span class="color-infected">1,026</span>
                         Infected
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                 <div class="card-body">
                     <div class="card-icon bg-light"><i class="fas fa-virus color-infected"></i><i class="fas fa-user color-infected"></i></div>
                     <div class="card-text">
-                        <span class="color-infected">3.46</span>
+                        <span class="color-infected">3.71</span>
                         Infected by 100,000 habs.
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                 <div class="card-body">
                     <div class="card-icon bg-light"><i class="fas fa-skull-crossbones color-death"></i></div>
                     <div class="card-text">
-                        <span class="color-death">7</span>
+                        <span class="color-death">8</span>
                         Deaths
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                 <div class="card-body">
                     <div class="card-icon bg-light"><i class="fas fa-book-dead color-death"></i></div>
                     <div class="card-text">
-                        <span class="color-death">0.7%</span>
+                        <span class="color-death">0.8%</span>
                         Mortality Rate
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                 <div class="card-body">
                     <div class="card-icon bg-light"><i class="fas fa-calendar-day color-duplicate"></i></div>
                     <div class="card-text">
-                        <span class="color-duplicate">15</span>
+                        <span class="color-duplicate">20</span>
                         Days to duplicate
                     </div>
                 </div>
@@ -180,28 +180,28 @@
 
     <script>
 
-        var seriesInfected = [21,18,4,45,34,43,40,39,15,44,26,44,42,60,13,55,19,63];
-        var seriesInfectedMovingAverage = [15.857142857143,19.428571428571,20,22.714285714286,25,30,29.285714285714,31.857142857143,31.428571428571,37.142857142857,34.428571428571,35.857142857143,35.714285714286,38.571428571429,34.857142857143,40.571428571429,37,42.285714285714];
-        var dateSeriesAxis = ["May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26","May, 27","May, 28","May, 29","May, 30","May, 31","Jun, 1","Jun, 2","Jun, 3"];
+        var seriesInfected = [21,18,4,45,34,43,40,39,15,44,26,44,42,60,13,55,19,63,49,18,51];
+        var seriesInfectedMovingAverage = [15.857142857143,19.428571428571,20,22.714285714286,25,30,29.285714285714,31.857142857143,31.428571428571,37.142857142857,34.428571428571,35.857142857143,35.714285714286,38.571428571429,34.857142857143,40.571428571429,37,42.285714285714,43,39.571428571429,38.285714285714];
+        var dateSeriesAxis = ["May, 17","May, 18","May, 19","May, 20","May, 21","May, 22","May, 23","May, 24","May, 25","May, 26","May, 27","May, 28","May, 29","May, 30","May, 31","Jun, 1","Jun, 2","Jun, 3","Jun, 4","Jun, 5","Jun, 6"];
 
     </script>
     <script src="/js/infected-day.js"></script>
 
     <script>
 
-        var seriesDeath = [1,0,1,0,0,0,0,0,0,0,0,0,3,1,0,0,0,0];
-        var seriesDeathMovingAverage = [0.14285714285714,0.14285714285714,0.28571428571429,0.28571428571429,0.28571428571429,0.28571428571429,0.28571428571429,0.14285714285714,0.14285714285714,0,0,0,0.42857142857143,0.57142857142857,0.57142857142857,0.57142857142857,0.57142857142857,0.57142857142857];
+        var seriesDeath = [1,0,1,0,0,0,0,0,0,0,0,0,3,1,0,0,0,0,1,0,1];
+        var seriesDeathMovingAverage = [0.14285714285714,0.14285714285714,0.28571428571429,0.28571428571429,0.28571428571429,0.28571428571429,0.28571428571429,0.14285714285714,0.14285714285714,0,0,0,0.42857142857143,0.57142857142857,0.57142857142857,0.57142857142857,0.57142857142857,0.57142857142857,0.71428571428571,0.28571428571429,0.28571428571429];
 
     </script>
     <script src="/js/deaths-day.js"></script>
 
     <script>
-        var seriesInfectedAcumulated = [304,322,326,371,405,448,488,527,542,586,612,656,698,758,771,826,845,908];
+        var seriesInfectedAcumulated = [304,322,326,371,405,448,488,527,542,586,612,656,698,758,771,826,845,908,957,975,1026];
     </script>
     <script src="/js/infected-acumulated.js"></script>
 
     <script>
-        var seriesDeathsAcumulated = [1,1,2,2,2,2,2,2,2,2,2,2,5,6,6,6,6,6];
+        var seriesDeathsAcumulated = [1,1,2,2,2,2,2,2,2,2,2,2,5,6,6,6,6,6,7,7,8];
     </script>
     <script src="/js/deaths-acumulated.js"></script>
 
